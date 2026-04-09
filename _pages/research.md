@@ -38,7 +38,7 @@ My research draws on a mixed-methods approach that integrates ethnographic field
 
 ## Book
 
-**H/Mikael, E.** (2009). *Play Station Video Games amongst Ethiopian Children: An Investigation into Popularity of Play Station Video Games amongst Ethiopian Children in Addis Ababa*. VDM Verlag.
+**Chala, E. H.** (2009). *Play Station Video Games amongst Ethiopian Children: An Investigation into Popularity of Play Station Video Games amongst Ethiopian Children in Addis Ababa*. VDM Verlag.
 📖 [View on Amazon](https://www.amazon.com/Station-Video-amongst-Ethiopian-Children/dp/3639155661)
 
 ---
