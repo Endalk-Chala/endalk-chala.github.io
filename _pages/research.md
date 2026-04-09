@@ -105,40 +105,6 @@ A curated archive documenting cross-platform coverage of Somali immigration rhet
 
 ---
 
-## Journalism & Public Writing
-
-My journalism spans over a decade of reporting on digital rights, press freedom, disinformation, and political communication in Ethiopia and the Horn of Africa.
-
-**Global Voices** (2012–present) — Contributor and former Sub-Saharan Africa Editor. Selected pieces include:
-
-- [When Algorithms Bless the Scammers: How Facebook and TikTok Are Failing Ethiopia's Poor](https://globalvoices.org/2025/11/12/when-algorithms-bless-the-scammers-how-facebook-and-tiktok-are-failing-ethiopias-poor/) (2025)
-- [A Clash of Narratives: National Identity and Violent Conflict in Ethiopia](https://globalvoices.org/special/ethiopia-media-ecosystem-observatory/) (2021)
-- [How Ethiopia's Ruling Coalition Created a Playbook for Disinformation](https://advox.globalvoices.org/2019/11/23/in-ethiopias-disinformation-epidemic-the-crumbling-ruling-coalition-is-the-elephant-in-the-room/) (2019)
-- [Leaked Documents Show That Ethiopia's Ruling Elites Are Hiring Social Media Trolls](https://globalvoices.org/2018/01/20/leaked-documents-show-that-ethiopias-ruling-elites-are-hiring-social-media-trolls-and-watching-porn/) (2018)
-
-👉 [Full archive on Global Voices](https://globalvoices.org/author/endalk/)
-
-**Coda Story** — Reporting on authoritarian technology and platform manipulation:
-
-- [How TikTok Influencers Exploit Ethnic Divisions in Ethiopia](https://www.codastory.com/authoritarian-tech/tktok-ethiopia-ethnic-conflict/) (2023)
-
-👉 [Author profile on Coda Story](https://www.codastory.com/author/endalkachew_chala/)
-
-**The Guardian**:
-
-- [Ethiopia Scraps Addis Ababa 'Master Plan' after Protests Kill 140](https://www.theguardian.com/world/2016/jan/14/ethiopia-addis-ababa-master-plan-abandoned) (2016)
-- [Violent Clashes in Ethiopia over 'Master Plan' to Expand Addis](https://www.theguardian.com/world/2015/dec/11/ethiopia-protests-master-plan-addis-ababa) (2015)
-
-**Electronic Frontier Foundation (EFF)**:
-
-- [Defending Against Overreaching Surveillance in Ethiopia](https://www.eff.org/deeplinks/2015/09/defending-against-overreaching-surveillance-ethiopia-surveillance-self-defense-n-0) (2015)
-
-**GenderIT.org**:
-
-👉 [Author profile](https://genderit.org/user/1326)
-
----
-
 ## Translations
 
 **Surveillance Self-Defense (SSD) — Amharic Edition**
@@ -163,11 +129,56 @@ Translated the Electronic Frontier Foundation's Surveillance Self-Defense guide 
 
 ---
 
-## Methods & Tools
+## AI & Digital Tools Resource Library
 
-- Ethnographic content analysis
-- Semi-structured interviews
-- Computational text analysis
-- Digital scraping and dataset construction using: `Newspaper3k`, `Pandas`, `Jupyter Notebooks`, `R`
+A curated collection of tools and resources for researchers and journalists working with digital media, computational text analysis, and AI-assisted workflows.
 
-For more code and documentation, visit [@Endalk-Chala on GitHub](https://github.com/Endalk-Chala).
+### AI Research Assistants
+
+- [Elicit](https://elicit.com/) — AI research assistant for literature review, paper discovery, and data extraction from academic papers
+- [Consensus](https://consensus.app/) — Search engine that uses AI to find and synthesize findings from scientific research
+- [Semantic Scholar](https://www.semanticscholar.org/) — AI-powered academic search engine with citation analysis and paper recommendations
+- [Research Rabbit](https://www.researchrabbit.ai/) — Visual tool for discovering related papers and mapping citation networks
+- [NotebookLM](https://notebooklm.google/) — Google's AI notebook for synthesizing and querying your own research documents
+
+### Text Analysis & NLP
+
+- [Voyant Tools](https://voyant-tools.org/) — Free, web-based text analysis and visualization for digital humanities
+- [ATLAS.ti](https://atlasti.com/) — Qualitative data analysis for coding transcripts, field notes, and media content
+- [Orange Data Mining](https://orangedatamining.com/) — Visual programming tool for data analysis, text mining, and machine learning — no coding required
+- [NLTK](https://www.nltk.org/) — Python library for natural language processing and computational linguistics
+- [spaCy](https://spacy.io/) — Industrial-strength NLP library for Python with pre-trained language models
+
+### Data Collection & Web Scraping
+
+- [Newspaper3k](https://newspaper.readthedocs.io/) — Python library for extracting and parsing news articles at scale
+- [Beautiful Soup](https://beautiful-soup-4.readthedocs.io/) — Python library for parsing HTML and XML documents
+- [Wayback Machine](https://web.archive.org/) — Internet Archive's tool for accessing historical web content
+- [CrowdTangle](https://www.crowdtangle.com/) / [Junkipedia](https://www.junkipedia.org/) — Social media monitoring and tracking tools for researchers
+
+### Data Visualization
+
+- [Datawrapper](https://www.datawrapper.de/) — Create publication-ready charts, maps, and tables without coding
+- [Flourish](https://flourish.studio/) — Interactive data visualization and storytelling
+- [Tableau Public](https://public.tableau.com/) — Free data visualization platform for creating interactive dashboards
+- [RAWGraphs](https://rawgraphs.io/) — Open-source tool for creating custom vector-based visualizations from tabular data
+
+### Writing & Citation Management
+
+- [Zotero](https://www.zotero.org/) — Free, open-source reference manager with browser integration and collaborative libraries
+- [Grammarly](https://www.grammarly.com/) — AI writing assistant for grammar, clarity, and academic tone
+- [Paperpal](https://paperpal.com/) — AI editing tool built specifically for academic and research writing
+
+### Digital Security for Researchers & Journalists
+
+- [EFF Surveillance Self-Defense](https://ssd.eff.org/) — Guides for protecting yourself and your sources online
+- [Tails OS](https://tails.net/) — Privacy-focused operating system for sensitive research
+- [Signal](https://signal.org/) — Encrypted messaging for secure communication with sources
+
+### My Research Stack
+
+The tools I regularly use in my own computational research workflow:
+
+`Jupyter Notebooks` · `Pandas` · `Newspaper3k` · `R` · `Python` · `Voyant Tools` · `ATLAS.ti` · `Zotero`
+
+For code, datasets, and documentation, visit [@Endalk-Chala on GitHub](https://github.com/Endalk-Chala).
