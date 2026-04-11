@@ -1,0 +1,379 @@
+---
+layout: archive
+title: "Field Opportunities"
+permalink: /opportunities/
+author_profile: true
+---
+
+<style>
+  .opportunities-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .opportunities-intro {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #1a1a2e;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background-color: #f5f5f5;
+    border-left: 4px solid #f8b400;
+    border-radius: 4px;
+  }
+
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+  }
+
+  .filter-btn {
+    padding: 0.6em 1.2em;
+    border: 2px solid #d4d4d4;
+    background-color: #fff;
+    color: #1a1a2e;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+
+  .filter-btn:hover {
+    border-color: #f8b400;
+    color: #f8b400;
+  }
+
+  .filter-btn.active {
+    background-color: #f8b400;
+    border-color: #f8b400;
+    color: #fff;
+  }
+
+  .opportunities-section {
+    margin-bottom: 3em;
+  }
+
+  .section-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #f8b400;
+  }
+
+  .opportunity-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .opportunity-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #f8b400;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .opportunity-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 0;
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .opportunity-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .opportunity-title a:hover {
+    border-bottom-color: #f8b400;
+  }
+
+  .opportunity-type-badge {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  .badge-cfp {
+    background-color: #e3f2fd;
+    color: #1565c0;
+  }
+
+  .badge-conference {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+
+  .badge-grant {
+    background-color: #fff3e0;
+    color: #e65100;
+  }
+
+  .deadline-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-size: 1.05em;
+  }
+
+  .deadline-label {
+    color: #666;
+  }
+
+  .deadline-date {
+    color: #1a1a2e;
+  }
+
+  .deadline-date.past {
+    color: #c62828;
+    text-decoration: line-through;
+  }
+
+  .opportunity-excerpt {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    font-size: 0.95em;
+  }
+
+  .read-more-link {
+    display: inline-block;
+    color: #f8b400;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .read-more-link:hover {
+    color: #e0a300;
+    margin-left: 0.3em;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 2em;
+    color: #999;
+    font-size: 0.95em;
+  }
+
+  .contact-section {
+    margin-top: 3em;
+    padding: 1.5em;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+  }
+
+  .contact-section p {
+    color: #1a1a2e;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .contact-email {
+    color: #f8b400;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-email:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .card-header {
+      flex-direction: column;
+    }
+
+    .opportunity-title {
+      min-width: 100%;
+    }
+
+    .filter-buttons {
+      gap: 0.5em;
+    }
+
+    .filter-btn {
+      padding: 0.5em 1em;
+      font-size: 0.9em;
+    }
+  }
+</style>
+
+<div class="opportunities-container">
+  <div class="opportunities-intro">
+    <p>This page features a curated collection of calls for papers, conference announcements, and grant and fellowship opportunities in communication and adjacent fields. I update this regularly to help colleagues in the field stay informed about relevant academic opportunities.</p>
+  </div>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="filterOpportunities('all')">All</button>
+    <button class="filter-btn" onclick="filterOpportunities('cfp')">Call for Papers</button>
+    <button class="filter-btn" onclick="filterOpportunities('conference')">Conferences</button>
+    <button class="filter-btn" onclick="filterOpportunities('grant')">Grants & Fellowships</button>
+  </div>
+
+  {% assign upcoming_posts = site.posts | where_exp: "post", "post.categories contains 'opportunities'" | sort: "deadline" %}
+
+  {% assign now = site.time | date: "%s" | plus: 0 %}
+  {% assign upcoming = "" | split: "" %}
+  {% assign past = "" | split: "" %}
+
+  {% for post in upcoming_posts %}
+    {% if post.deadline %}
+      {% assign deadline_timestamp = post.deadline | date: "%s" | plus: 0 %}
+      {% if deadline_timestamp >= now %}
+        {% assign upcoming = upcoming | push: post %}
+      {% else %}
+        {% assign past = past | push: post %}
+      {% endif %}
+    {% else %}
+      {% assign upcoming = upcoming | push: post %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- Upcoming Opportunities Section -->
+  <div class="opportunities-section" id="upcoming-section">
+    <h2 class="section-title">Upcoming Opportunities</h2>
+
+    {% if upcoming.size > 0 %}
+      {% for post in upcoming %}
+        {% assign type_class = 'badge-cfp' %}
+        {% assign type_label = 'Call for Papers' %}
+
+        {% if post.tags contains 'conference' %}
+          {% assign type_class = 'badge-conference' %}
+          {% assign type_label = 'Conference' %}
+        {% elsif post.tags contains 'grant' or post.tags contains 'fellowship' %}
+          {% assign type_class = 'badge-grant' %}
+          {% assign type_label = 'Grant & Fellowship' %}
+        {% endif %}
+
+        <div class="opportunity-card" data-type="{{ post.tags | join: ' ' | downcase }}">
+          <div class="card-header">
+            <h3 class="opportunity-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            <span class="opportunity-type-badge {{ type_class }}">{{ type_label }}</span>
+          </div>
+
+          {% if post.deadline %}
+            <div class="deadline-section">
+              <span class="deadline-label">Deadline:</span>
+              <span class="deadline-date">{{ post.deadline | date: "%B %d, %Y" }}</span>
+            </div>
+          {% endif %}
+
+          {% if post.excerpt %}
+            <p class="opportunity-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+
+          <a href="{{ post.url | relative_url }}" class="read-more-link">Read more â</a>
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="empty-state">No upcoming opportunities at this time. Check back soon!</div>
+    {% endif %}
+  </div>
+
+  <!-- Past Opportunities Section -->
+  {% if past.size > 0 %}
+    <div class="opportunities-section" id="past-section">
+      <h2 class="section-title">Past Opportunities</h2>
+
+      {% for post in past %}
+        {% assign type_class = 'badge-cfp' %}
+        {% assign type_label = 'Call for Papers' %}
+
+        {% if post.tags contains 'conference' %}
+          {% assign type_class = 'badge-conference' %}
+          {% assign type_label = 'Conference' %}
+        {% elsif post.tags contains 'grant' or post.tags contains 'fellowship' %}
+          {% assign type_class = 'badge-grant' %}
+          {% assign type_label = 'Grant & Fellowship' %}
+        {% endif %}
+
+        <div class="opportunity-card" data-type="{{ post.tags | join: ' ' | downcase }}">
+          <div class="card-header">
+            <h3 class="opportunity-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            <span class="opportunity-type-badge {{ type_class }}">{{ type_label }}</span>
+          </div>
+
+          {% if post.deadline %}
+            <div class="deadline-section">
+              <span class="deadline-label">Deadline:</span>
+              <span class="deadline-date past">{{ post.deadline | date: "%B %d, %Y" }}</span>
+            </div>
+          {% endif %}
+
+          {% if post.excerpt %}
+            <p class="opportunity-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+
+          <a href="{{ post.url | relative_url }}" class="read-more-link">Read more â</a>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="contact-section">
+    <p>Know of an opportunity that should be listed here? <a href="mailto:endalk2006@gmail.com" class="contact-email">Email me at endalk2006@gmail.com</a></p>
+  </div>
+</div>
+
+<script>
+  function filterOpportunities(filter) {
+    const cards = document.querySelectorAll('.opportunity-card');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Update active button
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    // Filter cards
+    cards.forEach(card => {
+      if (filter === 'all') {
+        card.style.display = 'block';
+      } else {
+        const cardTypes = card.getAttribute('data-type').toLowerCase();
+        if (cardTypes.includes(filter)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      }
+    });
+  }
+</script>
