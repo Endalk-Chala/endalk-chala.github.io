@@ -21,8 +21,17 @@ My research draws on a mixed-methods approach that integrates ethnographic field
 **Chala, E. H.** & Workneh, T. W. (2025). Internet Shutdowns in Ethiopia: Discourses of Digital Sovereignty and Information Suppression amid Political Instability. *New Media & Society*.
 📄 [Read the article](https://journals.sagepub.com/doi/abs/10.1177/14614448251378981) · 💻 [GitHub repository](https://github.com/Endalk-Chala/ethiopia-internet-shutdowns)
 
-**Lemke, J.** & **Chala, E.** (2016). Tweeting Democracy: An Ethnographic Content Analysis of Social Media Use in the Differing Politics of Senegal and Ethiopia's Newspapers. *Journal of African Media Studies*, 8(2), 167–185.
+**Lemke, J.** & **Chala, E.** (2016). Tweeting Democracy: An Ethnographic Content Analysis of Social Media Use in the Differing Politics of Senegal and Ethiopia’s Newspapers. *Journal of African Media Studies*, 8(2), 167–185.
 📄 [Read the article](https://intellectdiscover.com/content/journals/10.1386/jams.8.2.167_1)
+
+---
+
+## Published Datasets
+
+**Chala, E. H.** (2025). *Journalist Safety in Ethiopia, 1992–2024* [Dataset]. Harvard Dataverse.
+DOI: [10.7910/DVN/FEPB8O](https://doi.org/10.7910/DVN/FEPB8O) · 🗃️ [View on DataONE](https://search.dataone.org/view/sha256:1f7962e5a0da50cc725e69c578eb25244f6524ead9b9d15d869097276e524560) · 💻 [GitHub repository](https://github.com/Endalk-Chala/ethiopia-journalist-safety)
+
+This dataset compiles publicly documented incidents affecting journalists in Ethiopia between 1992 and 2024—including arrests, prosecutions, attacks, abductions, harassment, killings, exile, licensing restrictions, and outlet closures—drawn from archival sources including CPJ, RSF, and IFEX. The corpus enables longitudinal analysis of risk trends across two political eras (EPRDF 1992–2018 and Prosperity Party 2019–2024) and underpins the *Journalism Practice* article above.
 
 ---
 
@@ -53,9 +62,7 @@ My research draws on a mixed-methods approach that integrates ethnographic field
 
 ### 🔹 Crowdsourcing Rebellion: Digital Diasporas and Insurgent Financing in Ethiopia
 
-This collaborative project, conducted with Dr. Seife Ayalew and Dr. Terrence Lyons, investigates the financing mechanisms and mobilization strategies of ethnic-based insurgent groups in Ethiopia, with a particular focus on the TPLF, the Amhara militia known as Fano, and the Oromo Liberation Army (OLA). We examine how members of the Ethiopian diaspora use digital platforms—especially GoFundMe—to raise funds and frame their support for armed groups.
-
-The full article, titled *Cyber Strategies and Diaspora Dynamics: Exploring Digital Financing in Ethnic Insurgencies in Ethiopia*, is currently under review for a special issue of *The Civil Wars* journal.
+This collaborative project, conducted with Dr. Seife Ayalew and Dr. Terrence Lyons, investigates the financing mechanisms and mobilization strategies of ethnic-based insurgent groups in Ethiopia, with a particular focus on the TPLF, the Amhara militia known as Fano, and the Oromo Liberation Army (OLA). We examine how members of the Ethiopian diaspora use digital platforms—especially GoFundMe—to raise funds and frame their support for armed groups. The full article, titled *Cyber Strategies and Diaspora Dynamics: Exploring Digital Financing in Ethnic Insurgencies in Ethiopia*, is currently under review for a special issue of *The Civil Wars* journal.
 
 👉 [View the GitHub repository](https://github.com/Endalk-Chala/Crowdsourcing-Rebellion)
 
@@ -111,33 +118,40 @@ My journalism spans over a decade of reporting on digital rights, press freedom,
 
 **Global Voices** (2012–present) — Contributor and former Sub-Saharan Africa Editor. Selected pieces include:
 
-- [When Algorithms Bless the Scammers: How Facebook and TikTok Are Failing Ethiopia's Poor](https://globalvoices.org/2025/11/12/when-algorithms-bless-the-scammers-how-facebook-and-tiktok-are-failing-ethiopias-poor/) (2025)
+- [When Algorithms Bless the Scammers: How Facebook and TikTok Are Failing Ethiopia’s Poor](https://globalvoices.org/2025/11/12/when-algorithms-bless-the-scammers-how-facebook-and-tiktok-are-failing-ethiopias-poor/) (2025)
 - [A Clash of Narratives: National Identity and Violent Conflict in Ethiopia](https://globalvoices.org/special/ethiopia-media-ecosystem-observatory/) (2021)
-- [How Ethiopia's Ruling Coalition Created a Playbook for Disinformation](https://advox.globalvoices.org/2019/11/23/in-ethiopias-disinformation-epidemic-the-crumbling-ruling-coalition-is-the-elephant-in-the-room/) (2019)
-- [Leaked Documents Show That Ethiopia's Ruling Elites Are Hiring Social Media Trolls](https://globalvoices.org/2018/01/20/leaked-documents-show-that-ethiopias-ruling-elites-are-hiring-social-media-trolls-and-watching-porn/) (2018)
+- [How Ethiopia’s Ruling Coalition Created a Playbook for Disinformation](https://advox.globalvoices.org/2019/11/23/in-ethiopias-disinformation-epidemic-the-crumbling-ruling-coalition-is-the-elephant-in-the-room/) (2019)
+- [Leaked Documents Show That Ethiopia’s Ruling Elites Are Hiring Social Media Trolls](https://globalvoices.org/2018/01/20/leaked-documents-show-that-ethiopias-ruling-elites-are-hiring-social-media-trolls-and-watching-porn/) (2018)
 
 👉 [Full archive on Global Voices](https://globalvoices.org/author/endalk/)
 
 **Coda Story** — Reporting on authoritarian technology and platform manipulation:
+
 - [How TikTok Influencers Exploit Ethnic Divisions in Ethiopia](https://www.codastory.com/authoritarian-tech/tktok-ethiopia-ethnic-conflict/) (2023)
 
 👉 [Author profile on Coda Story](https://www.codastory.com/author/endalkachew_chala/)
 
 **The Guardian**:
-- [Ethiopia Scraps Addis Ababa 'Master Plan' after Protests Kill 140](https://www.theguardian.com/world/2016/jan/14/ethiopia-addis-ababa-master-plan-abandoned) (2016)
-- [Violent Clashes in Ethiopia over 'Master Plan' to Expand Addis](https://www.theguardian.com/world/2015/dec/11/ethiopia-protests-master-plan-addis-ababa) (2015)
+
+- [Ethiopia Scraps Addis Ababa ‘Master Plan’ after Protests Kill 140](https://www.theguardian.com/world/2016/jan/14/ethiopia-addis-ababa-master-plan-abandoned) (2016)
+- [Violent Clashes in Ethiopia over ‘Master Plan’ to Expand Addis](https://www.theguardian.com/world/2015/dec/11/ethiopia-protests-master-plan-addis-ababa) (2015)
 
 **Electronic Frontier Foundation (EFF)**:
+
 - [Defending Against Overreaching Surveillance in Ethiopia](https://www.eff.org/deeplinks/2015/09/defending-against-overreaching-surveillance-ethiopia-surveillance-self-defense-n-0) (2015)
 
 **GenderIT.org**:
+
 👉 [Author profile](https://genderit.org/user/1326)
+
 ---
 
 ## Translations
 
 **Surveillance Self-Defense (SSD) — Amharic Edition**
-Translated the Electronic Frontier Foundation's Surveillance Self-Defense guide into Amharic, making digital security resources accessible to millions of Amharic speakers.
+
+Translated the Electronic Frontier Foundation’s Surveillance Self-Defense guide into Amharic, making digital security resources accessible to millions of Amharic speakers.
+
 🌐 [View the Amharic SSD guide](https://ssd.eff.org/am)
 
 ---
@@ -153,7 +167,7 @@ Translated the Electronic Frontier Foundation's Surveillance Self-Defense guide 
 
 **Podcasts**:
 
-- 🎙️ [Facebook's Supreme Court](https://radiolab.org/podcast/facebooks-supreme-court/transcript) — *Radiolab* (NPR / WNYC Studios)
+- 🎙️ [Facebook’s Supreme Court](https://radiolab.org/podcast/facebooks-supreme-court/transcript) — *Radiolab* (NPR / WNYC Studios)
 - 🎙️ [Mis/Disinformation in the Context of the Oromo Protests](https://americanassembly.org/wbi-podcast/p4-what-existence-is-mine-understanding-the-oromo-protests-feat-endalkachew-chala) — *We Be Imagining, American Assembly*
 
 ---
