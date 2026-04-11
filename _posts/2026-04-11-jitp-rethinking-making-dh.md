@@ -1,5 +1,5 @@
 ---
-title: "Call for Papers: Rethinking Making in the Digital Humanities â Critiques and Pedagogies That Transform"
+title: "Call for Papers: Rethinking Making in the Digital Humanities -- Critiques and Pedagogies That Transform"
 date: 2026-04-11
 permalink: /posts/2026/04/jitp-rethinking-making-dh/
 categories: opportunities
@@ -42,7 +42,7 @@ Contributions may address questions such as:
 
 - Research-based submissions should include discussions of approach, method, and analysis
 - The journal practices signed peer review (as opposed to anonymous/blind review)
-- Expected length for finished manuscripts is under 5,000 words or equivalent for timed/other media forms (roughly 20â25 minutes of dialogue, 45 minutes of spoken presentation, etc.)
+- Expected length for finished manuscripts is under 5,000 words or equivalent for timed/other media forms (roughly 20-25 minutes of dialogue, 45 minutes of spoken presentation, etc.)
 - Both text-based and multimedia submissions are welcome
 - All work should be original and previously unpublished
 - Simultaneous submissions will not be considered
