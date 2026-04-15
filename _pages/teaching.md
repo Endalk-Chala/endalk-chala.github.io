@@ -34,14 +34,12 @@ Introduction to Critical Media Studies, Media in the Digital Age, Media in Globa
 **Communication Foundations**
 Public Speaking, Introduction to Communication, Small Group Communication, Intercultural Communication, Communication Research Methods, Communications Law
 
-**Community Engagement**
-I work with community organizations across the Twin Cities, including the International Institute of Minnesota and KFAI-FM community radio in Minneapolis, on communication training, audio production, and civic media projects.
 
 ---
 
 ## Selected Courses by Institution
 
-### At Hamline University (2018–2023; 2024–present)
+### At Hamline University (2018–2023) and Various Colleges (2024–present)
 
 COMM 1100: Introduction to Communication · COMM 1110: Public Speaking · COMM 1750: Small Group Communication · COMM 1320: Introduction to Critical Media Studies · COMM 3320: Media in the Digital Age · COMM 3460: Intercultural Communication · COMM 3300: Communication Research Methods · COMM 3420: Media in Global Perspective
 
