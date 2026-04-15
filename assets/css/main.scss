@@ -41,3 +41,108 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+/* ==========================================================================
+   MOBILE-FRIENDLY OVERRIDES
+   Makes the sidebar compact on phones so content is visible immediately
+   ========================================================================== */
+
+@media screen and (max-width: 1023px) {
+  /* Make sidebar horizontal and compact on mobile */
+  .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.75em 1em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Smaller avatar on mobile */
+  .author__avatar {
+    display: block;
+    width: auto;
+
+    img {
+      max-width: 60px;
+      border-radius: 50%;
+    }
+  }
+
+  /* Name and bio side by side with avatar */
+  .author__content {
+    display: block;
+    flex: 1;
+    min-width: 150px;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  /* Smaller name on mobile */
+  .sidebar .author__name {
+    font-size: 0.9em;
+    margin-bottom: 2px;
+  }
+
+  /* Hide the long bio on mobile — just show name */
+  .author__bio {
+    display: none;
+  }
+
+  /* Hide the pronouns on mobile */
+  .author__pronouns {
+    display: none;
+  }
+
+  /* Make social links compact horizontal row */
+  .author__urls-wrapper {
+    width: 100%;
+    display: block;
+
+    button {
+      font-size: 0.75em;
+      padding: 4px 8px;
+    }
+  }
+
+  /* When social links dropdown is open, make it compact */
+  .author__urls {
+    &.is--visible {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+      position: relative;
+      margin-top: 8px;
+      padding: 8px;
+
+      li {
+        white-space: nowrap;
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  /* Hide desktop-only elements */
+  .sidebar .author__desktop {
+    display: none;
+  }
+
+  /* Reduce page content top margin */
+  .page {
+    margin-top: 0;
+  }
+}
+
+/* Slightly larger screens (tablets) — show bio but keep compact */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .author__bio {
+    display: block;
+    font-size: 0.8em;
+    margin: 4px 0;
+  }
+
+  .author__avatar img {
+    max-width: 80px;
+  }
+}
