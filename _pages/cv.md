@@ -22,18 +22,18 @@ redirect_from:
 
 ## Professional Employment
 
-- **Adjunct Faculty**, Hamline University, International Institute of Minnesota, Saint Paul, MN (Oct. 2024–present)
-- **Researcher**, NSF-funded Convergence Accelerator / Discourse Labs, Remote, MN (Sept. 2023–Oct. 2024)
-- **Assistant Professor**, Hamline University, Department of Communication Studies, Saint Paul, MN (Sept. 2018–Oct. 2023)
-- **Graduate Teaching Assistant**, University of Oregon, School of Journalism & Communication, Eugene, OR (Aug. 2013–June 2018)
-- **Assistant Lecturer**, Addis Ababa University, Institute of Peace & Security Studies, Addis Ababa, Ethiopia (Aug. 2012–May 2013)
-- **Assistant Lecturer**, Arba Minch University, Department of English, Arba Minch, Ethiopia (Sept. 2005–July 2012)
+- **Adjunct Faculty & Community Educator**, Twin Cities, MN (2024–present)
+- **Researcher**, NSF-funded Convergence Accelerator / Discourse Labs (2023–2024)
+- **Assistant Professor**, Hamline University, Department of Communication Studies, Saint Paul, MN (2018–2023)
+- **Graduate Teaching Fellow**, University of Oregon, School of Journalism & Communication, Eugene, OR (2013–2018)
+- **Assistant Lecturer**, Addis Ababa University, Institute of Peace & Security Studies, Addis Ababa, Ethiopia (2012–2013)
+- **Lecturer**, Arba Minch University, Department of English, Arba Minch, Ethiopia (2005–2012)
 
 ---
 
 ## Fellowships
 
-- **Non-Resident Fellow**, Cornell Brooks Center on Global Democracy, Cornell University (Jan. 2026–present)
+- **Non-Resident Fellow**, Cornell Brooks Center on Global Democracy, Cornell University (2026–present)
 - **Google Policy Fellow**, Electronic Frontier Foundation (EFF) (Summer 2014)
 - **Annenberg-Oxford Media Policy Summer Institute** (Summer 2012)
 
