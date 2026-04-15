@@ -13,11 +13,10 @@ I have taught at a range of institutions — public and private, in the United S
 
 ## Institutions & Roles
 
-- **Adjunct Professor**, Hamline University (2024–present)
+- **Adjunct Professor**, Various Colleges, Twin Cities, MN (2024–present)
 - **Researcher**, NSF-funded Convergence Accelerator / Discourse Labs (2023–2024)
 - **Assistant Professor**, Hamline University (2018–2022)
 - **Graduate Teaching Fellow**, University of Oregon (2013–2018)
-- **Communication Specialist**, International Institute of Minnesota (2024–present)
 - **Lecturer**, Arba Minch University, Ethiopia (2005–2012)
 
 ---
@@ -35,8 +34,8 @@ Introduction to Critical Media Studies, Media in the Digital Age, Media in Globa
 **Communication Foundations**
 Public Speaking, Introduction to Communication, Small Group Communication, Intercultural Communication, Communication Research Methods, Communications Law
 
-**Community & Professional Communication**
-Workforce Communication, Professional Development & Career Readiness (International Institute of Minnesota)
+**Community Engagement**
+I work with community organizations across the Twin Cities, including the International Institute of Minnesota and KFAI-FM community radio in Minneapolis, on communication training, audio production, and civic media projects.
 
 ---
 
