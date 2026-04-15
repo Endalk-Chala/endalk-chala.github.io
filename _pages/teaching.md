@@ -15,7 +15,7 @@ I have taught at a range of institutions — public and private, in the United S
 
 - **Adjunct Professor**, Various Colleges, Twin Cities, MN (2024–present)
 - **Researcher**, NSF-funded Convergence Accelerator / Discourse Labs (2023–2024)
-- **Assistant Professor**, Hamline University (2018–2022)
+- **Assistant Professor**, Hamline University (2018–2023)
 - **Graduate Teaching Fellow**, University of Oregon (2013–2018)
 - **Lecturer**, Arba Minch University, Ethiopia (2005–2012)
 
@@ -41,7 +41,7 @@ I work with community organizations across the Twin Cities, including the Intern
 
 ## Selected Courses by Institution
 
-### At Hamline University (2018–2022; 2024–present)
+### At Hamline University (2018–2023; 2024–present)
 
 COMM 1100: Introduction to Communication · COMM 1110: Public Speaking · COMM 1750: Small Group Communication · COMM 1320: Introduction to Critical Media Studies · COMM 3320: Media in the Digital Age · COMM 3460: Intercultural Communication · COMM 3300: Communication Research Methods · COMM 3420: Media in Global Perspective
 
