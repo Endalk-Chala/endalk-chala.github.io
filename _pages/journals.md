@@ -1,12 +1,21 @@
 ---
 layout: archive
-title: "Communication Journals Database"
+title: "Journal Navigator"
 permalink: /journals/
 author_profile: true
 ---
 
-<p style="font-size:1.05em; line-height:1.6; margin-bottom:1.2em;">
-A searchable database of <strong>76</strong> peer-reviewed journals in communication and adjacent fields. Use the filters below to find journals by subfield, open access status, or keyword. Each entry includes impact factor, indexing information, publication frequency, and direct links to the journal homepage and submission guidelines.
+<div style="text-align:center; margin-bottom:1.5em; padding:1em 0;">
+<h2 style="font-size:1.8em; margin-bottom:0.2em; color:#2B4C7E;">Journal Navigator</h2>
+<p style="font-size:1.1em; color:#666; margin:0;">Find the right journals for your publication</p>
+</div>
+
+<div style="background:#f0f4f8; border-left:4px solid #2B4C7E; border-radius:6px; padding:16px 20px; margin-bottom:1.5em; font-size:0.95em; line-height:1.7; color:#333;">
+One of the first courses I took in graduate school at the University of Oregon was <em>Teaching and Professional Life</em>, designed to prepare doctoral students for careers as assistant professors. During that time, I was struck by how few resources existed to help graduate students navigate the landscape of scholarly publishing — which journals are relevant to my work? Where should I submit? Which conferences should I attend? Which professional associations like ICA, AEJMC, IAMCR, and NCA should I join? I began compiling a list of journals in communication and adjacent fields, along with professional associations and their conferences. What started as a personal reference has grown into this searchable database of <strong>76</strong> peer-reviewed journals. I hope it helps other graduate students and early-career scholars make more informed decisions about where to publish and where to engage. This resource will continue to grow.
+</div>
+
+<p style="font-size:0.95em; line-height:1.6; margin-bottom:1.2em; color:#555;">
+Use the filters below to search by subfield, open access status, or keyword. Each entry includes impact factor, indexing information, publication frequency, and direct links to submission guidelines.
 </p>
 
 <div id="journal-app">
