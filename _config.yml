@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "My Scholarly Space"
 title_separator          : "-"
 name                     : &name "Endalkachew H Chala"
-description              : &description "Researcher of media and communication in liminal communities"
+description              : &description "Media and communication scholar studying digital platforms, journalism, and public communication across multilingual and transnational contexts"
 url                      : https://endalk-chala.github.io # the base hostname & protocol for your site e.g. "https://[Endalk-Chala].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Endalk-Chala/endalk-chala.github.io"
@@ -24,7 +24,7 @@ author:
   # Biographic information
   avatar           : "endalk_profile.png"
   name             : "Endalkachew H Chala" 
-  bio              : "Researcher of media and communication in liminal communities"
+  bio              : "Media and communication scholar studying digital platforms, journalism, and public communication across multilingual and transnational contexts"
   location         : "Minneapolis–Saint Paul"
   uri              : "https://endalk.blog"
   email            : "endalk2006@gmail.com" 
@@ -171,8 +171,8 @@ exclude:
   - config
   - Dockerfile
   - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
+  - Gruntfile
+  - gulpfile
   - LICENSE
   - local
   - log
@@ -317,7 +317,7 @@ whitelist:
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  - Jekyll Archives plugin archive pages built with Liquid ~> type: liquid (default)
 #  Path (examples)
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
@@ -344,7 +344,7 @@ tag_archive:
 
 
 # HTML Compression
-# - http://jch.penibelst.de/
+# - http://penibelst.de/
 compress_html:
   clippings: all
   ignore:
