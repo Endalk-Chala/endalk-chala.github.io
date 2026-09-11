@@ -1,17 +1,24 @@
 ---
 permalink: /
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Hello! My name is Endalkachew H. Chala. I’m a researcher and educator specializing in journalism, digital communication, and political media systems. My scholarly work centers on communities in liminality—groups navigating shifting identities, political uncertainties, and transitional social structures after leaving their home countries and resettling in places such as the United States and Europe. I investigate how these communities use digital media to shape public discourse, engage in activism, and negotiate narratives of conflict, belonging, and reconciliation.
+Hello! I’m **Endalkachew H. Chala**, a media and communication scholar whose work examines how digital platforms, media institutions, and public and nonprofit organizations shape **public knowledge, access, trust, and communicative power** across multilingual, intercultural, and transnational settings.
 
-My research employs qualitative and quantitative methodologies—including ethnographic fieldwork, comparative content analysis, and digital research techniques—to study phenomena such as diaspora activism, online surveillance, platform governance, internet shutdowns, and content moderation. I’m particularly interested in how digital media influence the social, political, and cultural experiences of resettled communities.
+My research brings together **platform governance, journalism, political communication, migration and intercultural communication, and institutional communication**. I study questions such as AI-assisted content moderation, Trust & Safety, internet shutdowns and digital sovereignty, journalist safety, diaspora and transnational media, immigrant information environments, and communication between institutions and culturally and linguistically diverse communities.
 
-As an educator, I have taught diverse communication courses—including public speaking, intercultural communication, digital journalism, and media ethics—at institutions such as Hamline University, the University of Oregon, and Arba Minch University. My pedagogy emphasizes student-centered engagement, civic responsibility, and connections between local storytelling and global information systems. I integrate digital research methods into my teaching to equip students with critical analytical skills and practical knowledge.
+I use **quantitative, qualitative, computational, and mixed-method approaches**, including statistical analysis, computational text analysis, classifier audits, web scraping, interviews, ethnography, archival research, discourse analysis, and digital trace data. I am currently a **Fellow at the Center for an Informed Public at the University of Washington**, where I am extending this work into questions of information quality, trust, and public communication.
 
-Beyond academia, I’ve contributed actively to journalism as an editor at Global Voices, a role involving international reporting and digital advocacy. Additionally, I curate the African Media & Communication Research Library, a [Zotero-based resource](https://www.zotero.org/groups/2522868/african_media_and_communication_research_library) supporting scholars studying African media systems.
+Teaching is also central to my work. I have taught communication and media courses at **Arba Minch University, the University of Oregon, Hamline University, and colleges in the Twin Cities**, and I also teach digital and information literacy in community settings. This includes work with immigrant and refugee communities through the **International Institute of Minnesota**, connecting communication scholarship with practical questions of access, participation, and everyday digital life.
 
-Since 2010, I’ve maintained my blog—[endalk.blog](https://endalk.blog)—where I regularly share analyses and commentary on journalism, technology, democracy, and cultural issues. The blog also hosts my newsletter, providing deeper reflections on my research and journalistic projects.
+Beyond academic research, I have a long record of journalism and public writing, including work with **Global Voices** and contributions to **The Guardian**. I also build and curate public-facing scholarly resources, including a **Journal Navigator**, a **Field Opportunities** page, and an **African Media & Communication Research Library** for researchers working across communication and media studies.
+
+### Explore
+
+**[Research](/research/)** · **[Publications](/publications/)** · **[Teaching](/teaching/)** · **[Journalism & Public Writing](/journalism/)**  
+**[Resource Library](/resources/)** · **[Journal Navigator](/journals/)** · **[Field Opportunities](/opportunities/)** · **[GitHub](https://github.com/Endalk-Chala)**
+
+I also write at **[endalk.blog](https://endalk.blog)**, where I share commentary and reflections on media, technology, democracy, research, and public life.
