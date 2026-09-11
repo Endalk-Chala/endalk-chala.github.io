@@ -5,54 +5,91 @@ permalink: /teaching/
 author_profile: true
 ---
 
-As an educator, I approach the classroom as a space for inquiry, reflection, and dialogue. I encourage students to critically examine how communication shapes individual identity, community relationships, and broader political and cultural structures. Whether teaching strategic communication, media theory, or public speaking, I emphasize engaged pedagogy — drawing connections between academic content and the lived experiences of students, especially those from historically underrepresented communities.
+Teaching has been a central part of my academic and community work for more than two decades. I have taught across universities, colleges, and community settings in Ethiopia and the United States, working with undergraduate and graduate students, first-generation college students, multilingual learners, immigrants, and refugees.
 
-I have taught at a range of institutions — public and private, in the United States and Ethiopia — working with diverse student populations including first-generation college students, multilingual learners, and international students. My teaching spans strategic communication, advertising, public relations, intercultural communication, media studies, and research methods.
+My teaching connects communication theory to practice. Whether I am teaching media studies, strategic communication, intercultural communication, public speaking, research methods, or digital literacy, I ask students to examine how communication shapes institutions, communities, identity, access, and public life.
 
----
-
-## Institutions & Roles
-
-- **Adjunct Professor**, Various Colleges, Twin Cities, MN (2024–present)
-- **Researcher**, NSF-funded Convergence Accelerator / Discourse Labs (2023–2024)
-- **Assistant Professor**, Hamline University (2018–2023)
-- **Graduate Teaching Fellow**, University of Oregon (2013–2018)
-- **Lecturer**, Arba Minch University, Ethiopia (2005–2012)
+I approach teaching as a space for inquiry, clarity, and participation. My goal is to help students develop the analytical confidence to evaluate information, communicate across difference, and apply what they learn beyond the classroom.
 
 ---
 
 ## Teaching Areas
 
-My teaching expertise spans the following areas, developed across more than a decade of classroom instruction:
+### Strategic Communication and Public Relations
 
-**Strategic Communication & Public Relations**
-Principles of Advertising, Advertising and Culture, PR Campaigns, Strategic Communications Research Methods, Gateway to Media (Strategic Communication), Message Design & Audience Understanding, Ethical & Civic Communication
+Advertising, public relations, strategic communication research, message design, audience analysis, campaigns, media relations, and ethical communication.
 
-**Media Studies & Digital Communication**
-Introduction to Critical Media Studies, Media in the Digital Age, Media in Global Perspective, Story Production for Digital Media, Media and Society, Media Professions
+### Media, Journalism, and Digital Communication
 
-**Communication Foundations**
-Public Speaking, Introduction to Communication, Small Group Communication, Intercultural Communication, Communication Research Methods, Communications Law
+Media and society, digital media, critical media studies, journalism, global media, digital storytelling, media professions, and communication law and ethics.
 
+### Intercultural and Community Communication
+
+Intercultural communication, migration and diaspora communication, multilingual communication, communication across cultural difference, and community-facing institutional communication.
+
+### Communication Foundations and Research Methods
+
+Public speaking, introduction to communication, small-group communication, argumentation, qualitative and quantitative research methods, content analysis, and digital research methods.
+
+### Digital and Information Literacy
+
+Digital literacy, information evaluation, online safety, platform awareness, and practical communication skills for immigrant and refugee communities navigating digital information environments and public institutions.
 
 ---
 
-## Selected Courses by Institution
+## Teaching Across Institutions
 
-### At Hamline University (2018–2023) and Various Colleges (2024–present)
+### Hamline University
 
-COMM 1100: Introduction to Communication · COMM 1110: Public Speaking · COMM 1750: Small Group Communication · COMM 1320: Introduction to Critical Media Studies · COMM 3320: Media in the Digital Age · COMM 3460: Intercultural Communication · COMM 3300: Communication Research Methods · COMM 3420: Media in Global Perspective
+As an Assistant Professor, I taught across the communication curriculum, including public speaking, intercultural communication, media studies, research methods, and digital communication. My courses often connected communication theory with contemporary questions of technology, culture, identity, and public life.
 
-### At University of Oregon (2013–2018)
+**Selected courses:** Introduction to Communication · Public Speaking · Small Group Communication · Introduction to Critical Media Studies · Media in the Digital Age · Intercultural Communication · Communication Research Methods · Media in Global Perspective
 
-J100: Media Professions · J201: Media and Society · J207: Gateway to Media · J340: Principles of Advertising · J396: International Communication · J385: Communications Law · J320: Gender, Media & Diversity · J408: Advertising and Culture
+### University of Oregon
 
-### At Arba Minch University, Ethiopia (2005–2012)
+At the University of Oregon, I taught in journalism, media studies, and strategic communication while completing my PhD. This work strengthened my experience teaching both foundational and professionally oriented courses in a large research-university setting.
 
-Principles of Journalism · Media Law & Ethics · Research Methods · Public Speaking · Argumentation and Debate · Senior Capstone Project · Sociolinguistics · Business Writing · Technical Report Writing
+**Selected courses:** Media Professions · Media and Society · Gateway to Media · Principles of Advertising · International Communication · Communications Law · Gender, Media & Diversity · Advertising and Culture
+
+### Arba Minch University
+
+My teaching career began at Arba Minch University in Ethiopia, where I taught journalism, communication, writing, research methods, and media law and ethics. I also supervised student research and capstone work and took on broader academic leadership responsibilities during my time there.
+
+**Selected courses:** Principles of Journalism · Media Law & Ethics · Research Methods · Public Speaking · Argumentation and Debate · Senior Capstone Project · Sociolinguistics · Business Writing · Technical Report Writing
+
+### Community and Adult Learning
+
+My teaching also extends beyond the university classroom. In community-based settings, I have taught digital literacy and practical communication skills to adult learners, including immigrants and refugees.
+
+At the **International Institute of Minnesota**, I work with immigrant and refugee communities on digital literacy, information evaluation, employment communication, and navigating online systems connected to education, work, and public services. This work has strengthened my interest in accessible communication, language access, and community-centered teaching.
+
+---
+
+## Teaching Approach
+
+Across academic and community settings, several principles guide my teaching:
+
+- **Make complex ideas usable.** I translate theory into examples, cases, exercises, and decisions students can work with.
+- **Teach across difference.** I design learning environments that take cultural, linguistic, and experiential differences seriously.
+- **Connect research and teaching.** My courses draw from my research on platforms, journalism, migration, political communication, and institutional communication.
+- **Build communication confidence.** Students should leave a course better able to speak, write, analyze evidence, and make informed judgments.
+- **Link the classroom to public life.** Communication education should help students understand institutions, communities, media systems, and the information environments they navigate every day.
+
+---
+
+## Selected Teaching Experience
+
+- **Assistant Professor**, Hamline University
+- **Graduate Teaching Fellow**, University of Oregon
+- **Lecturer**, Arba Minch University, Ethiopia
+- **College teaching**, Twin Cities, Minnesota
+- **Community-based digital literacy and adult education**, immigrant and refugee communities
+- **Digital literacy and employment communication**, International Institute of Minnesota
 
 ---
 
 ## Teaching Portfolio
 
-My complete teaching portfolio — including syllabi, student evaluation summaries, and sample assignments — is available upon request. Please contact me at endalk2006@gmail.com.
+A full teaching portfolio, including syllabi, assignments, teaching materials, and student-evaluation materials, is available upon request.
+
+For additional information, see my **[CV](/files/Endalkachew_H_Chala_CV.pdf)** or contact me at **endalk2006@gmail.com**.
