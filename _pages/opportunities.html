@@ -49,8 +49,14 @@ author_profile: true
   .deadline-date { color: #1a1a2e; }
   .deadline-date.past { color: #c62828; text-decoration: line-through; }
   .opportunity-excerpt { color: #555; line-height: 1.6; margin: 0.8em 0; font-size: 0.94em; }
-  .read-more-link { color: #b97f00; text-decoration: none; font-weight: 600; font-size: 0.92em; }
+  .card-actions { display: flex; flex-wrap: wrap; gap: 0.55em; align-items: center; margin-top: 0.9em; }
+  .read-more-link { color: #b97f00; text-decoration: none; font-weight: 600; font-size: 0.92em; margin-right: 0.2em; }
   .read-more-link:hover { text-decoration: underline; }
+  .share-link {
+    display: inline-block; padding: 0.32em 0.7em; border: 1px solid #d9d9d9; border-radius: 16px;
+    background: #fff; color: #444; text-decoration: none; font-size: 0.82em; font-weight: 600;
+  }
+  .share-link:hover { border-color: #999; color: #111; text-decoration: none; }
   .empty-state { text-align: center; padding: 2em; color: #888; }
   .contact-section {
     margin-top: 2.5em; padding: 1.3em; background: #f5f5f5; border-radius: 6px;
@@ -114,6 +120,8 @@ author_profile: true
           {% assign type_class = 'badge-grant' %}
           {% assign type_label = 'Grant & Fellowship' %}
         {% endif %}
+        {% assign share_url = post.url | absolute_url | url_encode %}
+        {% assign share_title = post.title | url_encode %}
 
         <div class="opportunity-card" data-type="{{ post.tags | join: ' ' | downcase }}">
           <div class="card-header">
@@ -124,7 +132,11 @@ author_profile: true
             <div class="deadline-section"><span class="deadline-label">Deadline:</span> <span class="deadline-date">{{ post.deadline | date: "%B %d, %Y" }}</span></div>
           {% endif %}
           {% if post.excerpt %}<p class="opportunity-excerpt">{{ post.excerpt | strip_html | truncatewords: 32 }}</p>{% endif %}
-          <a href="{{ post.url | relative_url }}" class="read-more-link">Read more →</a>
+          <div class="card-actions">
+            <a href="{{ post.url | relative_url }}" class="read-more-link">Read more →</a>
+            <a class="share-link" href="https://twitter.com/intent/tweet?text={{ share_title }}&url={{ share_url }}" target="_blank" rel="noopener noreferrer">Share on X</a>
+            <a class="share-link" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer">Share on LinkedIn</a>
+          </div>
         </div>
       {% endfor %}
     {% else %}
@@ -148,6 +160,9 @@ author_profile: true
           {% assign type_class = 'badge-grant' %}
           {% assign type_label = 'Grant & Fellowship' %}
         {% endif %}
+        {% assign share_url = post.url | absolute_url | url_encode %}
+        {% assign share_title = post.title | url_encode %}
+
         <div class="opportunity-card" data-type="{{ post.tags | join: ' ' | downcase }}">
           <div class="card-header">
             <h3 class="opportunity-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
@@ -155,7 +170,11 @@ author_profile: true
           </div>
           {% if post.deadline %}<div class="deadline-section"><span class="deadline-label">Deadline:</span> <span class="deadline-date past">{{ post.deadline | date: "%B %d, %Y" }}</span></div>{% endif %}
           {% if post.excerpt %}<p class="opportunity-excerpt">{{ post.excerpt | strip_html | truncatewords: 32 }}</p>{% endif %}
-          <a href="{{ post.url | relative_url }}" class="read-more-link">Read more →</a>
+          <div class="card-actions">
+            <a href="{{ post.url | relative_url }}" class="read-more-link">Read more →</a>
+            <a class="share-link" href="https://twitter.com/intent/tweet?text={{ share_title }}&url={{ share_url }}" target="_blank" rel="noopener noreferrer">Share on X</a>
+            <a class="share-link" href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer">Share on LinkedIn</a>
+          </div>
         </div>
       {% endfor %}
     </div>
