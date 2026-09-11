@@ -14,24 +14,23 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Teaching"
+    url: /teaching/
+
   - title: "Journalism & Public Writing"
     url: /journalism/
 
   - title: "Resource Library"
-    url: /resources/    
+    url: /resources/
 
   - title: "Journal Navigator"
     url: /journals/
 
-  - title: "Teaching"
-    url: /teaching/    
-        
   - title: "Field Opportunities"
     url: /opportunities/
-    
+
   - title: "CV"
     url: /files/Endalkachew_H_Chala_CV.pdf
 
   # - title: "CV"
   #   url: /cv-json/
-    
