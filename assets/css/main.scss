@@ -146,3 +146,37 @@
     max-width: 80px;
   }
 }
+
+/* ==========================================================================
+   CALMER TYPOGRAPHY
+   Softer navigation and heading weights for a more readable scholarly feel
+   ========================================================================== */
+
+.masthead__menu-item,
+.greedy-nav a {
+  font-weight: 400;
+}
+
+.masthead__menu-item--lg,
+.greedy-nav .visible-links li:first-child {
+  font-weight: 500;
+}
+
+.page__title {
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.page__content h2 {
+  font-weight: 500;
+  padding-bottom: 0.35em;
+}
+
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6,
+.archive__item-title {
+  font-weight: 500;
+}
