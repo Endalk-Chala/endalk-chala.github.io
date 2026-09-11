@@ -6,26 +6,21 @@ author_profile: true
 ---
 
 <style>
-  .publication-list a,
-  .publication-list a:visited {
-    font-weight: 400;
-    text-decoration: none;
-  }
-  .publication-list a:hover {
-    text-decoration: underline;
-  }
-  .publication-list li {
+  .page__content ul li {
     margin-bottom: 0.8em;
     line-height: 1.65;
   }
-  .publication-links {
-    font-size: 0.95em;
+  .page__content ul li a,
+  .page__content ul li a:visited {
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .page__content ul li a:hover {
+    text-decoration: underline;
   }
 </style>
 
 My research examines digital platforms, journalism, information integrity, migration and diaspora communication, and multilingual media systems. This page highlights selected recent work first, followed by a fuller scholarly record organized by publication type.
-
-<div class="publication-list">
 
 ## Selected & Recent Publications
 
@@ -93,7 +88,5 @@ My research examines digital platforms, journalism, information integrity, migra
 {% for post in earlier %}
 - [{{ post.title }}]({{ post.url | relative_url }}){% if post.venue %}. {{ post.venue }}{% endif %}{% if post.date %} ({{ post.date | date: "%Y" }}){% endif %}.
 {% endfor %}
-
-</div>
 
 For journalism and public-facing writing, see [Selected Journalism & Public Writing](/journalism/). For a complete professional record, see my [CV](/files/Endalkachew_H_Chala_CV.pdf).
