@@ -13,7 +13,7 @@ I use **quantitative, qualitative, computational, and mixed-method approaches**,
 
 ---
 
-## Platforms, AI, and Digital Governance
+## Platforms, AI, and Governance
 
 I examine how digital platforms govern speech, visibility, and access, particularly in multilingual and politically contested environments. My work focuses on AI-assisted content moderation, Trust & Safety, platform oversight, internet shutdowns, digital sovereignty, and the uneven implementation of platform rules across languages and regions.
 
@@ -23,7 +23,7 @@ A recurring question in this work is: **who bears the cost when platform governa
 
 ---
 
-## Journalism, Media Institutions, and Public Knowledge
+## Journalism and Public Knowledge
 
 I study how journalists, news organizations, and information institutions operate under political, technological, and economic pressure. My work examines journalist safety, fact-checking, immigrant and community journalism, press freedom, and the institutional conditions under which public knowledge is produced.
 
@@ -33,7 +33,7 @@ I approach journalism not only as a profession, but as an institution that struc
 
 ---
 
-## Migration, Diaspora, and Intercultural Communication
+## Migration and Intercultural Communication
 
 I examine how communication changes across migration, diaspora, religious, and intercultural settings. My research focuses on identity, belonging, language, media use, and intergenerational relationships across national and cultural boundaries.
 
@@ -53,7 +53,7 @@ Rather than treating political communication as nationally bounded, I focus on t
 
 ---
 
-## Nonprofit, Public, and Institutional Communication
+## Nonprofit and Institutional Communication
 
 I study how nonprofit and public institutions communicate with culturally and linguistically diverse communities, particularly under conditions of uncertainty, policy change, and institutional pressure. My interests include language access, public information, organizational trust, community outreach, framing, and the communication of complex policies and services.
 
