@@ -75,7 +75,13 @@ Many of my projects combine these approaches to connect large-scale patterns wit
 
 ## Current Research
 
-My current work extends these areas in several directions, including multilingual platform governance, Trust & Safety labor, immigrant and refugee information environments, journalist safety, nonprofit and institutional communication, and the relationship between AI systems and public communication.
+### AI Translation Infrastructure and Language Access
+
+[*When Translation Is Not Access: AI Translation Infrastructure and Communicative Inequality in Under-Resourced Languages*](https://github.com/Endalk-Chala/translation-infrastructure-language-access)
+
+This developing project examines how global platform companies shape language access through AI translation infrastructure. Using Amharic and Afaan Oromo as an empirical case, it compares Google Translate and Meta SeamlessM4T while evaluating whether automated translation preserves semantic meaning, pragmatic force, institutional meaning, and actionable information. The broader project asks how uneven language support across platforms produces unequal communicative access.
+
+My current work also extends these areas in several directions, including multilingual platform governance, Trust & Safety labor, immigrant and refugee information environments, journalist safety, nonprofit and institutional communication, and the relationship between AI systems and public communication.
 
 I am also developing research on how immigrant and refugee communities evaluate public information related to government services, benefits, health systems, and immigration policy, with particular attention to trust, language access, and information quality.
 
