@@ -19,6 +19,6 @@ Beyond academic research, I have a long record of journalism and public writing,
 ### Explore
 
 [Research](/research/) · [Publications](/publications/) · [Teaching](/teaching/) · [Journalism & Public Writing](/journalism/)  
-[Resource Library](/resources/) · [Journal Navigator](/journals/) · [Field Opportunities](/opportunities/) · [GitHub](https://github.com/Endalk-Chala)
+[Resource Library](/resources/) · [Journal Navigator](/journals/) · [Field Opportunities](/opportunities/) · [Zotero Bibliography](https://www.zotero.org/groups/6740254/multilingual_ai_and_information_ethics) · [GitHub](https://github.com/Endalk-Chala)
 
 I also write at [endalk.blog](https://endalk.blog), where I share commentary and reflections on media, technology, democracy, research, and public life.
