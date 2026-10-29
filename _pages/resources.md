@@ -9,6 +9,12 @@ A curated collection of AI tools, digital research methods, and resources for re
 
 ---
 
+## Curated Bibliographies
+
+- [Multilingual AI and Information Ethics](https://www.zotero.org/groups/6740254/multilingual_ai_and_information_ethics) — A public Zotero group library on information ethics, platform governance, machine translation, and multilingual AI, with a focus on low-resource languages and the Global South. Anyone can browse or subscribe to the feed; contact me to join as a contributor.
+
+---
+
 ## AI Research Assistants
 
 - [Elicit](https://elicit.com/) — AI research assistant for literature review, paper discovery, and data extraction from academic papers
