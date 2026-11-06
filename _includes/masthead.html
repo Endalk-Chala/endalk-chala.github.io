@@ -1,3 +1,30 @@
+<style>
+  .masthead__menu-item--dropdown { position: relative; }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > summary {
+    display: block; cursor: pointer; list-style: none;
+    padding: 0.5rem 1rem;
+  }
+  .nav-dropdown > summary::-webkit-details-marker { display: none; }
+  .nav-dropdown > summary::after { content: " ▾"; font-size: 0.75em; }
+  .nav-dropdown[open] > summary::after { content: " ▴"; }
+  .nav-dropdown > summary:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+  .nav-dropdown__menu {
+    position: absolute; top: 100%; left: 0; z-index: 1000;
+    display: block; min-width: 12.5rem; margin: 0; padding: 0.35rem 0;
+    list-style: none; background: var(--global-bg-color, #fff);
+    border: 1px solid var(--global-border-color, #ddd);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.14);
+  }
+  .nav-dropdown__menu li { display: block; white-space: nowrap; }
+  .nav-dropdown__menu a {
+    display: block; padding: 0.55rem 0.85rem;
+    text-decoration: none; color: var(--global-text-color, inherit);
+  }
+  .nav-dropdown__menu a:hover, .nav-dropdown__menu a:focus {
+    background: var(--global-code-background-color, rgba(128,128,128,0.12));
+  }
+</style>
 {% include base_path %}
 
 <div class="masthead">
@@ -13,7 +40,25 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% if link.children %}
+              <li class="masthead__menu-item masthead__menu-item--dropdown">
+                <details class="nav-dropdown">
+                  <summary>{{ link.title }}</summary>
+                  <ul class="nav-dropdown__menu">
+                    {% for child in link.children %}
+                      {% if child.url contains 'http' %}
+                        {% assign child_domain = '' %}
+                      {% else %}
+                        {% assign child_domain = base_path %}
+                      {% endif %}
+                      <li><a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </details>
+              </li>
+            {% else %}
+              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% endif %}
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
