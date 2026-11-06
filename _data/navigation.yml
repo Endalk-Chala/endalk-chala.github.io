@@ -20,17 +20,17 @@ main:
   - title: "Journalism & Public Writing"
     url: /journalism/
 
-  - title: "Resource Library"
-    url: /resources/
-
-  - title: "Journal Navigator"
-    url: /journals/
-
   - title: "Blog"
     url: /blog/
 
-  - title: "Field Opportunities"
-    url: /opportunities/
+  - title: "Resources"
+    children:
+      - title: "Resource Library"
+        url: /resources/
+      - title: "Journal Navigator"
+        url: /journals/
+      - title: "Field Opportunities"
+        url: /opportunities/
 
   - title: "CV"
     url: /files/Endalkachew_H_Chala_CV.pdf
