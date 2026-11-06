@@ -1,3 +1,17 @@
+---
+layout: single
+title: "Framing Local Publics: Reflections on Nonprofit News in the Twin Cities"
+date: 2025-04-21
+permalink: /posts/2025/04/framing-local-publics-reflections-nonprofit-news/
+categories:
+  - blog
+tags:
+  - research
+  - local-journalism
+  - nonprofit-news
+author_profile: true
+excerpt: "Research notes on how MinnPost and Sahan Journal frame civic issues and construct local publics."
+---
 
 Over the past few weeks, I’ve been laying the groundwork for a digital content analysis project focused on nonprofit journalism in the Twin Cities. The aim is to examine how two prominent local outlets—*MinnPost* and *Sahan Journal*—frame structurally embedded issues such as public safety, education, and environmental justice, and in doing so, how they construct and define their publics.
 
