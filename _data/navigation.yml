@@ -26,6 +26,9 @@ main:
   - title: "Journal Navigator"
     url: /journals/
 
+  - title: "Blog"
+    url: /blog/
+
   - title: "Field Opportunities"
     url: /opportunities/
 
