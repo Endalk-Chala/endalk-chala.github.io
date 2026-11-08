@@ -32,6 +32,9 @@ main:
       - title: "Opportunities"
         url: /opportunities/
 
+  - title: "Contact"
+    url: /contact/
+
   - title: "CV"
     url: /files/Endalkachew_H_Chala_CV.pdf
 
