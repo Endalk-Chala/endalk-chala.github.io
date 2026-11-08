@@ -9,32 +9,38 @@ I welcome questions and conversations about my research, publications, teaching,
 
 ## Send a message
 
-You can use the form below to prepare a message. **Selecting “Open email to send” opens your own email application** with the message filled in; it does not submit or store information on this website.
+Use the form below to send a message directly from this website. All fields marked * are required.
 
-<form id="academic-contact" class="contact-form" style="max-width:650px;margin:1.25rem 0 2rem;">
-  <div style="display:flex;gap:1rem;flex-wrap:wrap;">
-    <label style="flex:1;min-width:180px;margin-bottom:1rem;">First name <span aria-hidden="true">*</span><input type="text" id="contact-first" required autocomplete="given-name" style="display:block;width:100%;padding:.65rem;margin-top:.35rem;border:1px solid #aaa;border-radius:5px;"></label>
-    <label style="flex:1;min-width:180px;margin-bottom:1rem;">Last name <span aria-hidden="true">*</span><input type="text" id="contact-last" required autocomplete="family-name" style="display:block;width:100%;padding:.65rem;margin-top:.35rem;border:1px solid #aaa;border-radius:5px;"></label>
-  </div>
-  <label style="display:block;margin-bottom:1rem;">Your email <span aria-hidden="true">*</span><input type="email" id="contact-email" required autocomplete="email" style="display:block;width:100%;padding:.65rem;margin-top:.35rem;border:1px solid #aaa;border-radius:5px;"></label>
-  <label style="display:block;margin-bottom:1rem;">Message <span aria-hidden="true">*</span><textarea id="contact-message" required rows="6" style="display:block;width:100%;padding:.65rem;margin-top:.35rem;border:1px solid #aaa;border-radius:5px;"></textarea></label>
-  <button type="submit" style="background:#2c5780;color:white;border:0;border-radius:5px;padding:.75rem 1.2rem;font:inherit;cursor:pointer;">Open email to send</button>
+<form id="academic-contact" action="https://formsubmit.co/endalk2006@gmail.com" method="POST" style="max-width:650px;margin:1.25rem 0 2rem;">
+  <input type="hidden" name="_subject" value="New message from academic website">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_url" value="https://endalk-chala.github.io/contact/">
+  <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none;" aria-hidden="true">
+  <fieldset style="border:0;padding:0;margin:0 0 1rem;">
+    <legend style="font-weight:600;margin-bottom:.5rem;">Name <span aria-hidden="true">*</span></legend>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <label for="contact-first" style="flex:1;min-width:180px;margin-bottom:.5rem;">First
+        <input type="text" name="first_name" id="contact-first" required autocomplete="given-name" style="display:block;width:100%;padding:.65rem;margin-top:.35rem;border:1px solid #aaa;border-radius:5px;">
+      </label>
+      <label for="contact-last" style="flex:1;min-width:180px;margin-bottom:.5rem;">Last
+        <input type="text" name="last_name" id="contact-last" required autocomplete="family-name" style="display:block;width:100%;padding:.65rem;margin-top:.35rem;border:1px solid #aaa;border-radius:5px;">
+      </label>
+    </div>
+  </fieldset>
+  <label for="contact-email" style="display:block;margin-bottom:1rem;font-weight:600;">Email <span aria-hidden="true">*</span>
+    <input type="email" name="email" id="contact-email" required autocomplete="email" style="display:block;width:100%;padding:.65rem;margin-top:.35rem;border:1px solid #aaa;border-radius:5px;font-weight:normal;">
+  </label>
+  <label for="contact-message" style="display:block;margin-bottom:1rem;font-weight:600;">Comment or Message <span aria-hidden="true">*</span>
+    <textarea id="contact-message" name="message" required rows="6" style="display:block;width:100%;padding:.65rem;margin-top:.35rem;border:1px solid #aaa;border-radius:5px;font-weight:normal;"></textarea>
+  </label>
+  <p style="font-size:.9rem;">Spam protection is enabled. You may be asked to complete a reCAPTCHA check after pressing Submit.</p>
+  <button type="submit" style="background:#2c5780;color:white;border:0;border-radius:5px;padding:.75rem 1.2rem;font:inherit;cursor:pointer;">Submit</button>
 </form>
 
-<script>
-document.getElementById('academic-contact').addEventListener('submit', function (event) {
-  event.preventDefault();
-  const first = document.getElementById('contact-first').value.trim();
-  const last = document.getElementById('contact-last').value.trim();
-  const email = document.getElementById('contact-email').value.trim();
-  const message = document.getElementById('contact-message').value.trim();
-  const subject = 'Academic website inquiry from ' + first + ' ' + last;
-  const body = 'From: ' + first + ' ' + last + '\nEmail: ' + email + '\n\n' + message;
-  window.location.href = 'mailto:endalk2006@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-});
-</script>
+**First-time setup:** The form uses the free FormSubmit service. After the first submission, FormSubmit will email me an activation link to confirm delivery. Until I confirm that link, messages will not be delivered to my inbox.
 
-If the form does not open your email application, you can email me directly at [endalk2006@gmail.com](mailto:endalk2006@gmail.com).
+Alternatively, you can [email me directly](mailto:endalk2006@gmail.com).
 
 ---
 
