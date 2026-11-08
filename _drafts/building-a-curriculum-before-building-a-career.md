@@ -35,7 +35,7 @@ The English programme at Arba Minch had been established in September 2003, insi
 
 We benchmarked the existing programme against English departments at Cardiff, Nebraska, Stellenbosch, and Madras, and against the Department of Foreign Languages and Literature at Addis Ababa University. Three gaps stood out: the degree was three years when comparable degrees were four; students could not take a minor or an elective; and the theoretical courses, communication theory especially, had not been updated to match what the graduates were actually being hired to do.
 
-The revised programme ran four years and organised the major into linguistics, literature, and skills streams, with a small set of electives (film studies, mythology, theatre). It also added four minors: History, Amharic, Communication Studies, and Journalism. The Communication Studies minor covered communication theories, interpersonal and mass communication theory, development and intercultural communication, gender and communication, persuasion, interviewing, and public relations. The Journalism minor covered newspaper and magazine writing, feature writing, photojournalism, layout and design, media law and ethics, media management, principles of journalism, and investigative journalism. In other words, the revision took the applied purpose that had always defined the department and gave it a formal structure.
+The revised programme proposed a four-year degree and organised the major into linguistics, literature, and skills streams, with a small set of electives (film studies, mythology, theatre). It also proposed four minors: History, Amharic, Communication Studies, and Journalism. The Communication Studies minor covered communication theories, interpersonal and mass communication theory, development and intercultural communication, gender and communication, persuasion, interviewing, and public relations. The Journalism minor covered newspaper and magazine writing, feature writing, photojournalism, layout and design, media law and ethics, media management, principles of journalism, and investigative journalism. In other words, the revision took the applied purpose that had always defined the department and gave it a formal structure.
 
 ## Literature at the centre, media at the edges
 
@@ -53,7 +53,7 @@ I was part of that shift without quite knowing it. Reading the course list now, 
 
 Three reasons. First, curriculum documents from Ethiopian universities in the 2000s are hard to find; most lived on one office computer. If you are studying the history of English, journalism, or communication education in Ethiopia, this is a primary source, and a record of a programme type, applied English, that no longer exists in this form. Second, the "Rationale for Curriculum Revision" and "Constraints" sections describe conditions that many departments across the continent will recognise, and that rarely get written down. Third, I want colleagues who read my CV line "Co-author, revised four-year B.A. curriculum" to be able to see the thing itself, and to see that the bundling of English, journalism, and communication it represents was not a provincial oddity but a stage that most of the world's universities passed through.
 
-The draft is a draft. The preface says so. I have not edited it.
+The 2008 document is a draft, as its preface makes clear. I am sharing it as an archival record rather than presenting it as proof that every proposed change was subsequently implemented. The original document is reproduced without editorial changes.
 
 ## Documents
 
