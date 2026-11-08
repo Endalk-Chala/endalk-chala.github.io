@@ -57,7 +57,7 @@ The draft is a draft. The preface says so. I have not edited it.
 
 ## Documents
 
-- [Revised Curriculum for the B.A. in English Language and Literature, Arba Minch University, draft, 2008 (PDF, 40 pages)](/files/AMU_English_BA_Curriculum_Revision_2008.pdf). Co-authored by Tewodros Workalemahu, Temesgen Kassie, Mekdes Taye, and Endalkachew H. Chala.
-- [A later departmental curriculum for the B.A. in English Language and Literature (PDF, 104 pages)](/files/AMU_English_BA_Curriculum_Later_Revision.pdf). This is the department's subsequent revision, aligned with Ethiopia's harmonised undergraduate programme of 2019–20. I was not part of this revision; it is posted for comparison, and it is interesting to see which parts of the 2008 design survived, notably the communication, journalism, and public relations courses.
+- [Revised Curriculum for the B.A. in English Language and Literature, Arba Minch University, draft, August 2008 (PDF, 40 pages)](/files/AMU_English_BA_Curriculum_Revision_2008.pdf). A collaborative curriculum revision in which I participated.
+- [A later departmental curriculum for the B.A. in English Language and Literature, April 2021 (PDF, 104 pages)](/files/AMU_English_BA_Curriculum_Later_Revision.pdf). I was not involved in this later revision. I include it for comparison, particularly to show how communication, journalism, and public relations continued to appear in the programme.
 
 If you taught or studied in the department in those years and have corrections or memories, I would like to hear them.
