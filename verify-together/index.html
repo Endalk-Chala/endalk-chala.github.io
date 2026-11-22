@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verify Together Minnesota</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=Noto+Sans+Ethiopic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* layout: a quiet reading column with one loud moment, the "pause slip" checker in the hero */
+  --paper:#f1f4ef; --card:#ffffff; --ink:#0f2a2e; --ink-soft:#49605f; --line:#cfd8d1;
+  --deep:#0d3f45; --deep-ink:#eaf3ee; --deep-soft:#a9c7c1; --deep-line:#27606a;
+  --signal:#f2ab1c; --signal-ink:#3a2600; --ok:#1f7a55;
+  --display:"Bricolage Grotesque","Noto Sans Ethiopic","Segoe UI",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Noto Sans Ethiopic","Nyala","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#0b1719; --card:#12262a; --ink:#e7efe9; --ink-soft:#a3b8b3; --line:#27403f;
+    --deep:#0f3a40; --deep-ink:#eaf3ee; --deep-soft:#a9c7c1; --deep-line:#2b6872;
+    --signal:#f5b638; --signal-ink:#2c1c00; --ok:#5fcf9f;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#0b1719; --card:#12262a; --ink:#e7efe9; --ink-soft:#a3b8b3; --line:#27403f;
+  --deep:#0f3a40; --deep-ink:#eaf3ee; --deep-soft:#a9c7c1; --deep-line:#2b6872;
+  --signal:#f5b638; --signal-ink:#2c1c00; --ok:#5fcf9f;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+html[lang="am"] body, html[lang="ti"] body{line-height:1.8}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.08;letter-spacing:-0.01em}
+html[lang="am"] h1,html[lang="ti"] h1,html[lang="am"] h2,html[lang="ti"] h2,html[lang="am"] h3,html[lang="ti"] h3{line-height:1.3;letter-spacing:0;font-weight:800}
+p{margin:0}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:10px 0}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.15rem}
+.mark svg{flex:none}
+.mark .mn{font-weight:500;color:var(--ink-soft)}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin-left:auto;font-size:.95rem}
+nav a{text-decoration:none;color:var(--ink-soft);padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{color:var(--ink);border-bottom-color:var(--signal)}
+.lang{display:flex;align-items:center;gap:8px;font-size:.95rem}
+.lang label{color:var(--ink-soft)}
+.lang select{font:inherit;font-family:var(--body);color:var(--ink);background:var(--card);border:1.5px solid var(--ink);border-radius:8px;padding:7px 10px;min-width:150px;cursor:pointer}
+.status{background:var(--signal);color:var(--signal-ink);font-size:.9rem;font-weight:700}
+.status .wrap{padding-top:6px;padding-bottom:6px}
+
+/* hero */
+.hero{padding:44px 0 56px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px;align-items:start}
+.org{font-size:.95rem;color:var(--ink-soft);font-weight:700;margin-bottom:14px;max-width:34ch}
+h1{font-size:clamp(2.6rem,7.2vw,5.4rem);font-weight:800}
+h1 .b{position:relative;white-space:nowrap}
+h1 .b::after{content:"";position:absolute;left:-2%;right:-2%;bottom:.04em;height:.22em;background:var(--signal);z-index:-1;border-radius:3px}
+h1 span{display:inline-block;position:relative;z-index:0}
+.lead{margin-top:22px;font-size:1.15rem;max-width:52ch;color:var(--ink)}
+.tagline{margin-top:18px;font-family:var(--display);font-weight:700;color:var(--deep);font-size:1.05rem}
+:root[data-theme="dark"] .tagline{color:var(--deep-soft)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tagline{color:var(--deep-soft)}}
+
+/* checker: the pause slip */
+.slip{background:var(--deep);color:var(--deep-ink);border-radius:18px;padding:22px;box-shadow:0 18px 40px -22px rgba(6,40,44,.7);position:relative}
+.slip::before{content:"";position:absolute;left:22px;right:22px;top:0;height:6px;background:repeating-linear-gradient(90deg,var(--signal) 0 14px,transparent 14px 22px);border-radius:0 0 4px 4px}
+.slip h2{font-size:1.45rem;margin-top:10px}
+.slip .sub{color:var(--deep-soft);margin-top:8px;font-size:.98rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{font:inherit;font-family:var(--body);font-size:.95rem;text-align:start;color:var(--deep-ink);background:transparent;border:1.5px solid var(--deep-line);border-radius:999px;padding:8px 14px;cursor:pointer;transition:background .15s,border-color .15s}
+.chip:hover{border-color:var(--signal)}
+.chip[aria-pressed="true"]{background:var(--signal);border-color:var(--signal);color:var(--signal-ink);font-weight:700}
+.result{margin-top:18px;display:grid;gap:16px}
+.result h3{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--signal);font-family:var(--body);font-weight:700}
+html[lang="am"] .result h3,html[lang="ti"] .result h3{letter-spacing:0;font-size:.95rem;line-height:1.4}
+.result ul,.result ol{margin:8px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+.result li{position:relative;padding-inline-start:28px;font-size:.98rem}
+.signs li::before{content:"!";position:absolute;inset-inline-start:0;top:.15em;width:19px;height:19px;border-radius:50%;background:var(--signal);color:var(--signal-ink);font-weight:800;font-size:.8rem;display:grid;place-items:center;line-height:1}
+.steps{counter-reset:s}
+.steps li{counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:.15em;width:19px;height:19px;border-radius:5px;border:1.5px solid var(--deep-soft);color:var(--deep-ink);font-weight:700;font-size:.75rem;display:grid;place-items:center;line-height:1}
+.links{display:grid;gap:6px;margin-top:8px}
+.links a{color:var(--deep-ink);font-size:.95rem;text-underline-offset:3px}
+.links a:hover{color:var(--signal)}
+.phone{font-size:.95rem;color:var(--deep-soft);font-variant-numeric:tabular-nums}
+.note{font-size:.88rem;color:var(--deep-soft);border-top:1px solid var(--deep-line);padding-top:12px}
+
+/* sections */
+section{padding:56px 0;border-top:1px solid var(--line)}
+.sec-h{font-size:clamp(1.7rem,3.6vw,2.5rem);font-weight:800}
+.sec-sub{margin-top:10px;color:var(--ink-soft);max-width:62ch}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px;margin-top:8px}
+.two h2{font-size:1.5rem}
+.two p{margin-top:12px;max-width:60ch}
+.principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:26px;border-top:2px solid var(--ink)}
+.principles div{padding:18px 18px 20px 0;border-bottom:1px solid var(--line)}
+.principles h3{font-size:1.1rem}
+.principles p{margin-top:8px;color:var(--ink-soft);font-size:.98rem}
+.programs{display:grid;gap:12px;margin-top:26px}
+.prog{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:20px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.prog.first{border:2px solid var(--ink)}
+.tag{display:inline-block;font-size:.82rem;font-weight:700;border-radius:999px;padding:4px 12px;border:1.5px solid var(--line);color:var(--ink-soft)}
+.prog.first .tag{background:var(--signal);border-color:var(--signal);color:var(--signal-ink)}
+.prog h3{font-size:1.2rem}
+.prog p{margin-top:6px;color:var(--ink-soft)}
+.fields-h{font-size:1.3rem;margin-top:36px}
+.fields{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.fields li{border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--card);font-size:.98rem}
+.fields li.on{border-color:var(--signal);background:var(--signal);color:var(--signal-ink);font-weight:700}
+.pilot-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;margin-top:22px}
+.pilot-grid h3{font-size:1.1rem;margin-bottom:10px}
+.areas{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.areas li{padding:10px 14px;background:var(--card);border:1px solid var(--line);border-inline-start:5px solid var(--signal);border-radius:8px}
+.safe{margin-top:22px}
+.targets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}
+.tgt{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.tgt b{display:block;font-family:var(--display);font-size:2rem;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.1}
+.tgt span{color:var(--ink-soft);font-size:.95rem}
+.road{margin:26px 0 0;padding:0;list-style:none;display:grid;gap:0}
+.road li{display:grid;grid-template-columns:minmax(0,210px) minmax(0,1fr);gap:20px;padding:16px 0 16px 18px;border-inline-start:3px solid var(--line);position:relative}
+.road li::before{content:"";position:absolute;inset-inline-start:-8px;top:22px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:3px solid var(--ink-soft)}
+.road li.done::before{background:var(--ink-soft)}
+.road li.now{border-inline-start-color:var(--signal)}
+.road li.now::before{background:var(--signal);border-color:var(--signal)}
+.road .per{font-family:var(--display);font-weight:700;font-variant-numeric:tabular-nums}
+.nowchip{display:none;margin-inline-start:8px;font-family:var(--body);font-size:.78rem;font-weight:700;background:var(--signal);color:var(--signal-ink);border-radius:999px;padding:2px 9px;vertical-align:middle}
+.road li.now .nowchip{display:inline-block}
+.road p{color:var(--ink-soft)}
+.inv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}
+.inv div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.inv h3{font-size:1.15rem}
+.inv p{margin-top:8px;color:var(--ink-soft)}
+.contact{margin-top:22px;background:var(--deep);color:var(--deep-ink);border-radius:14px;padding:20px 22px;display:flex;flex-wrap:wrap;gap:8px 28px;align-items:baseline}
+.contact h3{font-size:1.1rem}
+.contact a{color:var(--signal)}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--ink-soft);font-size:.92rem}
+footer p{max-width:80ch;margin-top:8px}
+.trans{color:var(--ink);font-weight:700}
+@media (max-width:860px){
+  .hero-grid,.two,.pilot-grid{grid-template-columns:minmax(0,1fr)}
+  .principles,.targets,.inv{grid-template-columns:repeat(2,minmax(0,1fr))}
+  nav{margin-left:0;order:3;width:100%}
+  .lang{margin-left:auto}
+}
+@media (max-width:560px){
+  .principles,.targets,.inv{grid-template-columns:minmax(0,1fr)}
+  .prog,.road li{grid-template-columns:minmax(0,1fr);gap:8px}
+  .hero{padding-top:28px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.chip{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="#top" aria-label="Verify Together Minnesota">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="1.5" y="1.5" width="27" height="27" rx="7" fill="none" stroke="currentColor" stroke-width="3"/><rect x="9" y="8" width="4" height="14" rx="1.5" fill="currentColor"/><rect x="17" y="8" width="4" height="14" rx="1.5" fill="#f2ab1c"/></svg>
+      <span>Verify Together <span class="mn">Minnesota</span></span>
+    </a>
+    <div class="lang">
+      <label for="lang" data-i18n="lang_label">Language</label>
+      <select id="lang">
+        <option value="en">English</option>
+        <option value="am">አማርኛ (Amharic)</option>
+        <option value="om">Afaan Oromoo</option>
+      </select>
+    </div>
+    <nav aria-label="Sections">
+      <a href="#mission" data-i18n="nav_mission">Mission</a>
+      <a href="#programs" data-i18n="nav_programs">Programs</a>
+      <a href="#pilot" data-i18n="nav_pilot">Pilot</a>
+      <a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a>
+      <a href="#involve" data-i18n="nav_involve">Get involved</a>
+    </nav>
+  </div>
+  <div class="status"><div class="wrap" data-i18n="status">Proposed initiative. Not yet incorporated.</div></div>
+</header>
+
+<main id="top">
+<div class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="org">Verify Together Minnesota</p>
+    <h1><span data-i18n="hero_title_a">Trust</span> <span class="b" data-i18n="hero_title_b">before</span> <span data-i18n="hero_title_c">you pay.</span></h1>
+    <p class="lead" data-i18n="hero_lead"></p>
+    <p class="tagline" data-i18n="tagline"></p>
+  </div>
+  <aside class="slip" aria-labelledby="tool-h">
+    <h2 id="tool-h" data-i18n="tool_title"></h2>
+    <p class="sub" data-i18n="tool_sub"></p>
+    <div class="chips" id="chips" role="group" aria-labelledby="tool-h"></div>
+    <div class="result" id="result" aria-live="polite">
+      <div><h3 data-i18n="tool_signs"></h3><ul class="signs" id="signs"></ul></div>
+      <div><h3 data-i18n="tool_steps"></h3><ol class="steps" id="steps"></ol></div>
+      <div><h3 data-i18n="tool_check"></h3><div class="links" id="links"></div>
+        <p class="phone" style="margin-top:8px"><span data-i18n="ag_phone"></span>: (651) 296-3353 · (800) 657-3787</p>
+        <p class="phone" data-i18n="tool_links_note" style="margin-top:6px"></p></div>
+      <p class="note" data-i18n="tool_note"></p>
+    </div>
+  </aside>
+</div></div>
+
+<section id="mission"><div class="wrap">
+  <div class="two">
+    <div><h2 data-i18n="mission_h"></h2><p data-i18n="mission_t"></p></div>
+    <div><h2 data-i18n="vision_h"></h2><p data-i18n="vision_t"></p></div>
+  </div>
+  <h2 class="sec-h" style="margin-top:48px" data-i18n="principles_h"></h2>
+  <div class="principles">
+    <div><h3 data-i18n="pr1_h"></h3><p data-i18n="pr1_t"></p></div>
+    <div><h3 data-i18n="pr2_h"></h3><p data-i18n="pr2_t"></p></div>
+    <div><h3 data-i18n="pr3_h"></h3><p data-i18n="pr3_t"></p></div>
+    <div><h3 data-i18n="pr4_h"></h3><p data-i18n="pr4_t"></p></div>
+    <div><h3 data-i18n="pr5_h"></h3><p data-i18n="pr5_t"></p></div>
+    <div><h3 data-i18n="pr6_h"></h3><p data-i18n="pr6_t"></p></div>
+  </div>
+</div></section>
+
+<section id="programs"><div class="wrap">
+  <h2 class="sec-h" data-i18n="programs_h"></h2>
+  <p class="sec-sub" data-i18n="programs_sub"></p>
+  <div class="programs">
+    <div class="prog first"><div><span class="tag" data-i18n="tag_pilot"></span></div><div><h3 data-i18n="pg1_h"></h3><p data-i18n="pg1_t"></p></div></div>
+    <div class="prog"><div><span class="tag" data-i18n="tag_later"></span></div><div><h3 data-i18n="pg2_h"></h3><p data-i18n="pg2_t"></p></div></div>
+    <div class="prog"><div><span class="tag" data-i18n="tag_later"></span></div><div><h3 data-i18n="pg3_h"></h3><p data-i18n="pg3_t"></p></div></div>
+    <div class="prog"><div><span class="tag" data-i18n="tag_gradual"></span></div><div><h3 data-i18n="pg4_h"></h3><p data-i18n="pg4_t"></p></div></div>
+  </div>
+  <h3 class="fields-h" data-i18n="fields_h"></h3>
+  <ul class="fields"><li class="on" data-i18n="f1"></li><li class="on" data-i18n="f2"></li><li data-i18n="f3"></li><li data-i18n="f4"></li><li data-i18n="f5"></li><li data-i18n="f6"></li><li data-i18n="f7"></li><li data-i18n="f8"></li><li data-i18n="f9"></li></ul>
+  <p class="sec-sub" data-i18n="fields_note"></p>
+</div></section>
+
+<section id="pilot"><div class="wrap">
+  <h2 class="sec-h"><span data-i18n="pilot_h"></span>: <span data-i18n="pg1_h"></span></h2>
+  <div class="pilot-grid">
+    <div>
+      <p data-i18n="pilot_t"></p>
+      <div class="safe"><h3 data-i18n="safe_h"></h3><p data-i18n="safe_t"></p></div>
+    </div>
+    <div>
+      <h3 data-i18n="areas_h"></h3>
+      <ul class="areas"><li data-i18n="ar1"></li><li data-i18n="ar2"></li><li data-i18n="ar3"></li><li data-i18n="ar4"></li><li data-i18n="ar5"></li></ul>
+    </div>
+  </div>
+  <h2 class="sec-h" style="margin-top:48px;font-size:1.6rem" data-i18n="targets_h"></h2>
+  <p class="sec-sub" data-i18n="targets_note"></p>
+  <div class="targets">
+    <div class="tgt"><b>3–4</b><span data-i18n="tg1"></span></div>
+    <div class="tgt"><b>6</b><span data-i18n="tg2"></span></div>
+    <div class="tgt"><b>150–200</b><span data-i18n="tg3"></span></div>
+    <div class="tgt"><b>10–12</b><span data-i18n="tg4"></span></div>
+    <div class="tgt"><b>1</b><span data-i18n="tg5"></span></div>
+    <div class="tgt"><b>1</b><span data-i18n="tg6"></span></div>
+  </div>
+</div></section>
+
+<section id="roadmap"><div class="wrap">
+  <h2 class="sec-h" data-i18n="road_h"></h2>
+  <p class="sec-sub" data-i18n="road_note"></p>
+  <ol class="road" id="road">
+    <li data-start="2026-11" data-end="2027-01"><div class="per"><span data-i18n="rd1_p"></span><span class="nowchip" data-i18n="now"></span></div><p data-i18n="rd1_t"></p></li>
+    <li data-start="2027-01" data-end="2027-03"><div class="per"><span data-i18n="rd2_p"></span><span class="nowchip" data-i18n="now"></span></div><p data-i18n="rd2_t"></p></li>
+    <li data-start="2027-03" data-end="2027-05"><div class="per"><span data-i18n="rd3_p"></span><span class="nowchip" data-i18n="now"></span></div><p data-i18n="rd3_t"></p></li>
+    <li data-start="2027-05" data-end="2027-08"><div class="per"><span data-i18n="rd4_p"></span><span class="nowchip" data-i18n="now"></span></div><p data-i18n="rd4_t"></p></li>
+    <li data-start="2027-08" data-end="2027-11"><div class="per"><span data-i18n="rd5_p"></span><span class="nowchip" data-i18n="now"></span></div><p data-i18n="rd5_t"></p></li>
+    <li data-start="2027-11" data-end="2028-01"><div class="per"><span data-i18n="rd6_p"></span><span class="nowchip" data-i18n="now"></span></div><p data-i18n="rd6_t"></p></li>
+  </ol>
+</div></section>
+
+<section id="involve"><div class="wrap">
+  <h2 class="sec-h" data-i18n="involve_h"></h2>
+  <p class="sec-sub" data-i18n="involve_t"></p>
+  <div class="inv">
+    <div><h3 data-i18n="inv1_h"></h3><p data-i18n="inv1_t"></p></div>
+    <div><h3 data-i18n="inv2_h"></h3><p data-i18n="inv2_t"></p></div>
+    <div><h3 data-i18n="inv3_h"></h3><p data-i18n="inv3_t"></p></div>
+  </div>
+  <div class="contact">
+    <h3 data-i18n="contact_h"></h3>
+    <p data-i18n="contact_t"></p>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p><strong>Verify Together Minnesota</strong> · Twin Cities</p>
+  <p data-i18n="foot_legal"></p>
+  <p class="trans" id="trans" data-i18n="foot_trans" hidden></p>
+  <p data-i18n="foot_lang"></p>
+</div></footer>
+
+<script>
+const I18N = {"en":{"nav_mission":"Mission","nav_programs":"Programs","nav_pilot":"Pilot","nav_roadmap":"Roadmap","nav_involve":"Get involved","status":"Proposed initiative. Not yet incorporated.","lang_label":"Language","hero_title_a":"Trust","hero_title_b":"before","hero_title_c":"you pay.","hero_lead":"We help immigrant communities in Minnesota spot deception, check claims that matter, and protect their privacy, in the languages they use every day.","tagline":"Information you can trust. Communities you can empower.","tool_title":"Is someone asking you for money or documents?","tool_sub":"Choose what it is about. You will see warning signs and steps to check.","tool_signs":"Warning signs","tool_steps":"Before you pay","tool_check":"Check with official sources","tool_links_note":"These links open official websites. Most are in English.","tool_note":"This guide does not decide whether something is a scam. It gives you ways to check. Nothing you choose here is saved or sent.","ag_phone":"Minnesota Attorney General's Office","s1":"Immigration or legal help","s2":"A job offer","s3":"Housing or a rental deposit","s4":"A call from the government or police","s5":"A request to send money","s1_g1":"A notario or consultant offers legal advice on your case.","s1_g2":"They promise a result or claim special connections.","s1_g3":"They charge for blank government forms.","s1_t1":"Only attorneys and representatives accredited by the U.S. Department of Justice may give immigration legal advice. Look for the name on the official roster.","s1_t2":"Government immigration forms are free on uscis.gov.","s1_t3":"Ask for a written contract and a receipt. Keep your original documents.","s2_g1":"You must pay first for training, equipment or a background check.","s2_g2":"They send you a check and ask you to send part of it back.","s2_g3":"You are hired quickly with no real interview.","s2_t1":"Find the company's official website yourself and call the number listed there.","s2_t2":"Do not pay to get a job.","s2_t3":"Do not give your Social Security or bank number until you have confirmed the employer.","s3_g1":"You are asked for a deposit before you see the home.","s3_g2":"The rent is far below similar homes nearby.","s3_g3":"The owner says they are away and cannot meet you.","s3_t1":"Visit the home in person before paying anything.","s3_t2":"Confirm who owns the property through county property records.","s3_t3":"Pay in a way that leaves a record. Get a signed lease and a receipt.","s4_g1":"The caller demands payment right away.","s4_g2":"They threaten arrest, deportation or loss of benefits.","s4_g3":"They ask for gift cards, a wire transfer or cryptocurrency.","s4_t1":"Hang up. You do not have to decide during the call.","s4_t2":"Call the agency using the number on its official website.","s4_t3":"Government agencies do not ask for payment by gift card.","s5_g1":"You are told to act now or lose the chance.","s5_g2":"You are asked to keep it secret from family or friends.","s5_g3":"You are asked to pay a stranger by gift card, wire, cryptocurrency or a payment app.","s5_t1":"Pause. Talk to someone you trust before you send anything.","s5_t2":"If you already paid, call your bank or card company right away.","s5_t3":"Report it. Reports help protect other people.","mission_h":"Mission","mission_t":"To protect immigrant communities from information-related harm by strengthening access to trustworthy information, advancing digital and financial safety, supporting community-led verification, and promoting accountability in the institutions and technologies that shape public communication.","vision_h":"Vision","vision_t":"A society in which every community, regardless of language, immigration background or income, can make informed decisions, communicate safely, and take full part in public life without exploitation, deception or exclusion from information.","principles_h":"How we work","pr1_h":"Community leadership","pr1_t":"Residents and community organizations help define the problems and judge the solutions.","pr2_h":"Trust and accountability","pr2_t":"Verification rests on evidence, is transparent, and is open to correction.","pr3_h":"Privacy and dignity","pr3_t":"We avoid collecting immigration status, identifying details or sensitive messages unless it is necessary.","pr4_h":"Institutional responsibility","pr4_t":"Public agencies remain responsible for meaningful language access and accurate communication.","pr5_h":"Open and accessible technology","pr5_t":"Tools should be understandable, open to inspection, and reusable where possible.","pr6_h":"Evidence-based action","pr6_t":"We evaluate programs for what works and for effects we did not intend.","programs_h":"Programs","programs_sub":"We begin with one program. The others follow as resources and community priorities allow.","tag_pilot":"Founding pilot","tag_later":"Later phase","tag_gradual":"Built gradually","pg1_h":"Trust Before You Pay","pg1_t":"Community scam prevention, source verification, education and referrals.","pg2_h":"Language Access and Institutional Accountability","pg2_t":"Assessing how accessible and accurate public institutions' communication is, without replacing their own obligations. This includes evaluating translation and AI language tools in the languages communities use.","pg3_h":"Digital Privacy and Community Safety","pg3_t":"Training on impersonation, account security, privacy and exploitation risks.","pg4_h":"Community Information Research Lab","pg4_t":"Applied studies of information networks, verification practices and harms that matter to communities.","pilot_h":"The founding pilot","pilot_t":"A small, community-driven effort to help people evaluate suspicious requests before they send money, hand over documents or hire a service provider. It begins with listening sessions, training for trusted partners, and a privacy-conscious verification prototype.","areas_h":"Where we start","ar1":"Immigration and legal-service impersonation","ar2":"Fraudulent job and recruitment offers","ar3":"Housing and rental deposit scams","ar4":"Government or law-enforcement impersonation","ar5":"Financial and payment-related deception","safe_h":"Built with safeguards","safe_t":"The prototype will point people to official registries, real institutional contacts and clear warning signs. It will explain uncertainty and offer steps to check, not automatic verdicts. Basic features will not require sensitive personal information.","targets_h":"First-year plan","targets_note":"Planning targets. They depend on partners and funding.","tg1":"Community partner organizations","tg2":"Community listening sessions","tg3":"Residents reached through training","tg4":"Community educators trained","tg5":"Working verification prototype","tg6":"Public evaluation report","road_h":"Roadmap, 2026 to 2027","road_note":"A proposed timeline. Later steps depend on funding.","now":"Now","rd1_p":"Nov–Dec 2026","rd1_t":"Confirm the working name and founding concept. Begin reaching out to advisors.","rd2_p":"Jan–Feb 2027","rd2_t":"Hold community listening sessions. Recruit the first advisory group. Explore fiscal sponsorship.","rd3_p":"Mar–Apr 2027","rd3_t":"Finalize the pilot plan, partnerships and seed-grant proposals.","rd4_p":"May–Jul 2027","rd4_t":"Build a limited verification prototype and test how usable it is.","rd5_p":"Aug–Oct 2027","rd5_t":"Run small workshops with partners and evaluate the results.","rd6_p":"Nov–Dec 2027","rd6_t":"Publish what we learned, revise the model and seek follow-on support.","involve_h":"Get involved","involve_t":"We are talking with immigrant-serving organizations, community educators, and people with experience in consumer protection, law, nonprofit finance, digital safety and research.","inv1_h":"Community organizations","inv1_t":"Tell us which scams your community is seeing. Help shape the pilot.","inv2_h":"Advisors","inv2_t":"Join a small, independent advisory group.","inv3_h":"Supporters","inv3_t":"Small, flexible support helps with listening sessions and early setup. We are not collecting donations yet.","contact_h":"Contact","contact_t":"Founder: Endalkachew H. Chala, PhD","foot_legal":"The name is provisional. The organization has not been incorporated and does not have tax-exempt status. Nothing on this site is legal, tax or financial advice.","foot_trans":"","foot_lang":"Your language choice is remembered on this device only.","fields_h":"Fields of work","fields_note":"The pilot starts with scams. The other fields follow as partners and funding allow.","f1":"Consumer and financial safety","f2":"Immigration and legal services","f3":"Civic information","f4":"Health information","f5":"Education","f6":"Public benefits","f7":"Emergency and disaster information","f8":"Digital privacy and safety","f9":"Language access"},"am":{"nav_mission":"ተልዕኮ","nav_programs":"ፕሮግራሞች","nav_pilot":"የሙከራ ፕሮግራም","nav_roadmap":"የሥራ ዕቅድ","nav_involve":"ይሳተፉ","status":"በዕቅድ ላይ ያለ ተነሳሽነት። ገና በሕግ አልተመዘገበም።","lang_label":"ቋንቋ","hero_title_a":"ከመክፈልዎ","hero_title_b":"በፊት","hero_title_c":"ያረጋግጡ።","hero_lead":"በሚኒሶታ የሚኖሩ የስደተኛ ማኅበረሰቦች ማጭበርበርን እንዲለዩ፣ አስፈላጊ መረጃዎችን እንዲያረጋግጡ እና ግላዊነታቸውን እንዲጠብቁ በየዕለቱ በሚጠቀሙባቸው ቋንቋዎች እንረዳለን።","tagline":"የሚታመን መረጃ። አቅም ያላቸው ማኅበረሰቦች።","tool_title":"ገንዘብ ወይም ሰነድ የሚጠይቅዎ ሰው አለ?","tool_sub":"ጉዳዩ ስለ ምን እንደሆነ ይምረጡ። የማስጠንቀቂያ ምልክቶችንና የማረጋገጫ ደረጃዎችን ያያሉ።","tool_signs":"የማስጠንቀቂያ ምልክቶች","tool_steps":"ከመክፈልዎ በፊት","tool_check":"ከኦፊሴላዊ ምንጮች ያረጋግጡ","tool_links_note":"እነዚህ ማስፈንጠሪያዎች ኦፊሴላዊ ድረ-ገጾችን ይከፍታሉ። አብዛኞቹ በእንግሊዝኛ ናቸው።","tool_note":"ይህ መመሪያ አንድ ነገር ማጭበርበር መሆኑን አይወስንም። የማረጋገጫ መንገዶችን ይሰጥዎታል። እዚህ የሚመርጡት ምንም ነገር አይቀመጥም፣ አይላክም።","ag_phone":"የሚኒሶታ ጠቅላይ ዐቃቤ ሕግ ቢሮ","s1":"የኢሚግሬሽን ወይም የሕግ እርዳታ","s2":"የሥራ ቅጥር ጥሪ","s3":"መኖሪያ ቤት ወይም የኪራይ ቅድመ ክፍያ","s4":"ከመንግሥት ወይም ከፖሊስ ነኝ የሚል ጥሪ","s5":"ገንዘብ እንዲልኩ የሚጠይቅ ጥያቄ","s1_g1":"ኖታሪዮ ወይም አማካሪ ነኝ የሚል ሰው በጉዳይዎ ላይ የሕግ ምክር ሊሰጥዎ ይፈልጋል።","s1_g2":"ውጤት እንደሚያረጋግጡ ወይም ልዩ ትውውቅ እንዳላቸው ይናገራሉ።","s1_g3":"ላልተሞሉ የመንግሥት ቅጾች ገንዘብ ያስከፍላሉ።","s1_t1":"የኢሚግሬሽን የሕግ ምክር መስጠት የሚችሉት ጠበቆችና በአሜሪካ የፍትሕ ሚኒስቴር ዕውቅና ያገኙ ተወካዮች ብቻ ናቸው። ስሙን በኦፊሴላዊው ዝርዝር ላይ ይፈልጉ።","s1_t2":"የመንግሥት የኢሚግሬሽን ቅጾች በ uscis.gov ላይ በነጻ ይገኛሉ።","s1_t3":"የጽሑፍ ውልና ደረሰኝ ይጠይቁ። ዋና ሰነዶችዎን ራስዎ ይያዙ።","s2_g1":"ለሥልጠና፣ ለመሣሪያ ወይም ለማጣሪያ አስቀድመው እንዲከፍሉ ይጠየቃሉ።","s2_g2":"ቼክ ልከው ከፊሉን መልሰው እንዲልኩ ይጠይቃሉ።","s2_g3":"ያለ እውነተኛ ቃለ መጠይቅ በፍጥነት ተቀጥረዋል ይባላሉ።","s2_t1":"የድርጅቱን ኦፊሴላዊ ድረ-ገጽ ራስዎ ፈልገው እዚያ ባለው ስልክ ቁጥር ይደውሉ።","s2_t2":"ሥራ ለማግኘት ገንዘብ አይክፈሉ።","s2_t3":"አሠሪውን እስኪያረጋግጡ ድረስ የሶሻል ሴኩሪቲ ወይም የባንክ ቁጥርዎን አይስጡ።","s3_g1":"ቤቱን ሳያዩ ቅድመ ክፍያ ይጠየቃሉ።","s3_g2":"ኪራዩ በአካባቢው ካሉ ተመሳሳይ ቤቶች በጣም ያነሰ ነው።","s3_g3":"ባለቤቱ ሩቅ እንደሆነና ሊገናኝዎ እንደማይችል ይናገራል።","s3_t1":"ምንም ከመክፈልዎ በፊት ቤቱን በአካል ይጎብኙ።","s3_t2":"የንብረቱ ባለቤት ማን እንደሆነ በካውንቲው የንብረት መዝገብ ያረጋግጡ።","s3_t3":"ማስረጃ በሚተው መንገድ ይክፈሉ። የተፈረመ የኪራይ ውልና ደረሰኝ ይቀበሉ።","s4_g1":"ደዋዩ አሁኑኑ እንዲከፍሉ ያስገድዳል።","s4_g2":"በእስር፣ ከአገር በማስወጣት ወይም ጥቅማ ጥቅም በማሳጣት ያስፈራራሉ።","s4_g3":"በስጦታ ካርድ፣ በባንክ ዝውውር ወይም በክሪፕቶ እንዲከፍሉ ይጠይቃሉ።","s4_t1":"ስልኩን ይዝጉ። በጥሪው ጊዜ መወሰን የለብዎትም።","s4_t2":"በተቋሙ ኦፊሴላዊ ድረ-ገጽ ላይ ባለው ቁጥር ራስዎ ይደውሉ።","s4_t3":"የመንግሥት ተቋማት በስጦታ ካርድ ክፍያ አይጠይቁም።","s5_g1":"አሁኑኑ ካልፈጸሙ ዕድሉ ያመልጥዎታል ይባላሉ።","s5_g2":"ከቤተሰብ ወይም ከጓደኞች እንዲደብቁ ይጠየቃሉ።","s5_g3":"ለማያውቁት ሰው በስጦታ ካርድ፣ በባንክ ዝውውር፣ በክሪፕቶ ወይም በክፍያ መተግበሪያ እንዲከፍሉ ይጠየቃሉ።","s5_t1":"ቆም ይበሉ። ምንም ከመላክዎ በፊት ከሚያምኑት ሰው ጋር ይነጋገሩ።","s5_t2":"አስቀድመው ከከፈሉ ወዲያውኑ ወደ ባንክዎ ወይም የካርድ ድርጅትዎ ይደውሉ።","s5_t3":"ሪፖርት ያድርጉ። ሪፖርቶች ሌሎች ሰዎችን ለመጠበቅ ይረዳሉ።","mission_h":"ተልዕኮ","mission_t":"የስደተኛ ማኅበረሰቦችን ከመረጃ ጋር ከተያያዘ ጉዳት መጠበቅ፤ ይህም ታማኝ መረጃ የማግኘት ዕድልን በማጠናከር፣ የዲጂታልና የገንዘብ ደህንነትን በማሳደግ፣ በማኅበረሰብ የሚመራ የመረጃ ማረጋገጥን በመደገፍ፣ እንዲሁም ሕዝባዊ ግንኙነትን በሚቀርጹ ተቋማትና ቴክኖሎጂዎች ላይ ተጠያቂነትን በማበረታታት ነው።","vision_h":"ራዕይ","vision_t":"ማንኛውም ማኅበረሰብ ቋንቋው፣ የስደት ታሪኩ ወይም ገቢው ምንም ይሁን ምን በመረጃ ላይ የተመሠረተ ውሳኔ የሚወስንበት፣ በደህንነት የሚገናኝበት፣ እንዲሁም ያለ ብዝበዛ፣ ያለ ማጭበርበርና ከመረጃ ሳይገለል በሕዝባዊ ሕይወት ሙሉ በሙሉ የሚሳተፍበት ኅብረተሰብ።","principles_h":"አሠራራችን","pr1_h":"የማኅበረሰብ አመራር","pr1_t":"ነዋሪዎችና የማኅበረሰብ ድርጅቶች ችግሮቹን በመለየትና መፍትሔዎቹን በመገምገም ይሳተፋሉ።","pr2_h":"እምነትና ተጠያቂነት","pr2_t":"ማረጋገጥ በማስረጃ ላይ የተመሠረተ፣ ግልጽ እና ለእርማት ክፍት ነው።","pr3_h":"ግላዊነትና ክብር","pr3_t":"አስፈላጊ ካልሆነ በቀር የኢሚግሬሽን ሁኔታን፣ ማንነትን የሚገልጹ ዝርዝሮችን ወይም ስሱ መልእክቶችን አንሰበስብም።","pr4_h":"የተቋማት ኃላፊነት","pr4_t":"ትርጉም ያለው የቋንቋ ተደራሽነትና ትክክለኛ መረጃ የማቅረብ ኃላፊነት የመንግሥት ተቋማት ሆኖ ይቀጥላል።","pr5_h":"ክፍትና ተደራሽ ቴክኖሎጂ","pr5_t":"መሣሪያዎች ለመረዳት ቀላል፣ ለምርመራ ክፍት እና በተቻለ መጠን ዳግም ጥቅም ላይ የሚውሉ መሆን አለባቸው።","pr6_h":"በማስረጃ ላይ የተመሠረተ ተግባር","pr6_t":"ፕሮግራሞቻችን ምን ያህል እንደሚሠሩና ያልታሰቡ ውጤቶች እንዳሏቸው እንገመግማለን።","programs_h":"ፕሮግራሞች","programs_sub":"በአንድ ፕሮግራም እንጀምራለን። ሌሎቹ ሀብትና የማኅበረሰብ ቅድሚያዎች ሲፈቅዱ ይከተላሉ።","tag_pilot":"የመጀመሪያ የሙከራ ፕሮግራም","tag_later":"ቀጣይ ምዕራፍ","tag_gradual":"ቀስ በቀስ የሚገነባ","pg1_h":"ከመክፈልዎ በፊት ያረጋግጡ","pg1_t":"በማኅበረሰብ ደረጃ ማጭበርበርን መከላከል፣ ምንጮችን ማረጋገጥ፣ ትምህርትና ወደ ትክክለኛ አገልግሎት መምራት።","pg2_h":"የቋንቋ ተደራሽነትና የተቋማት ተጠያቂነት","pg2_t":"የመንግሥት ተቋማት የሚያቀርቡት መረጃ ምን ያህል ተደራሽና ትክክለኛ እንደሆነ መገምገም፤ የራሳቸውን ግዴታ ሳንተካ። ይህም የትርጉምና የሰው ሠራሽ አስተውሎት (AI) የቋንቋ መሣሪያዎችን ማኅበረሰቦች በሚጠቀሙባቸው ቋንቋዎች መገምገምን ይጨምራል።","pg3_h":"ዲጂታል ግላዊነትና የማኅበረሰብ ደህንነት","pg3_t":"ሌላ ሰው መስሎ ስለ መቅረብ፣ ስለ መለያ ደህንነት፣ ስለ ግላዊነትና ስለ ብዝበዛ አደጋዎች ሥልጠና።","pg4_h":"የማኅበረሰብ መረጃ ምርምር ላብ","pg4_t":"ስለ መረጃ መረቦች፣ ስለ ማረጋገጥ ልምዶችና ማኅበረሰቦችን ስለሚመለከቱ ጉዳቶች ተግባራዊ ጥናቶች።","pilot_h":"የመጀመሪያው የሙከራ ፕሮግራም","pilot_t":"ሰዎች ገንዘብ ከመላካቸው፣ ሰነድ ከመስጠታቸው ወይም አገልግሎት ሰጪ ከመቅጠራቸው በፊት አጠራጣሪ ጥያቄዎችን እንዲመዝኑ የሚረዳ አነስተኛ፣ በማኅበረሰብ የሚመራ ጥረት። በማዳመጫ መድረኮች፣ ለታማኝ አጋሮች በሚሰጥ ሥልጠና እና ግላዊነትን በሚጠብቅ የማረጋገጫ ናሙና መሣሪያ ይጀምራል።","areas_h":"የምንጀምርባቸው ጉዳዮች","ar1":"የኢሚግሬሽንና የሕግ አገልግሎት ሰጪ መስሎ መቅረብ","ar2":"የሐሰት የሥራና የቅጥር ጥሪዎች","ar3":"የመኖሪያ ቤትና የኪራይ ቅድመ ክፍያ ማጭበርበሮች","ar4":"መንግሥት ወይም የሕግ አስከባሪ መስሎ መቅረብ","ar5":"ከገንዘብና ከክፍያ ጋር የተያያዘ ማታለል","safe_h":"ከጥንቃቄ ጋር የሚገነባ","safe_t":"ናሙና መሣሪያው ሰዎችን ወደ ኦፊሴላዊ መዝገቦች፣ ወደ ትክክለኛ የተቋማት አድራሻዎችና ወደ ግልጽ የማስጠንቀቂያ ምልክቶች ይመራል። እርግጠኛ ያልሆነውን ያብራራል፤ ራስ-ሰር ፍርድ ሳይሆን የማረጋገጫ ደረጃዎችን ይሰጣል። መሠረታዊ አገልግሎቶቹ ስሱ የግል መረጃ አይጠይቁም።","targets_h":"የመጀመሪያ ዓመት ዕቅድ","targets_note":"የዕቅድ ግቦች ናቸው። በአጋሮችና በገንዘብ ድጋፍ ላይ የተመሠረቱ ናቸው።","tg1":"አጋር የማኅበረሰብ ድርጅቶች","tg2":"የማኅበረሰብ ማዳመጫ መድረኮች","tg3":"በሥልጠና የሚደረስባቸው ነዋሪዎች","tg4":"የሚሠለጥኑ የማኅበረሰብ አስተማሪዎች","tg5":"የሚሠራ የማረጋገጫ ናሙና መሣሪያ","tg6":"ለሕዝብ ይፋ የሚሆን የግምገማ ሪፖርት","road_h":"የሥራ ዕቅድ፣ 2026 እስከ 2027","road_note":"የታቀደ የጊዜ ሰሌዳ ነው። ቀጣይ ደረጃዎች በገንዘብ ድጋፍ ላይ የተመሠረቱ ናቸው።","now":"አሁን","rd1_p":"ኖቬምበር–ዲሴምበር 2026","rd1_t":"የሥራ ስሙንና የመመሥረቻ ሐሳቡን ማጽናት። አማካሪዎችን ማነጋገር መጀመር።","rd2_p":"ጃንዋሪ–ፌብሩዋሪ 2027","rd2_t":"የማኅበረሰብ ማዳመጫ መድረኮችን ማካሄድ። የመጀመሪያውን አማካሪ ቡድን ማቋቋም። የፋይናንስ ስፖንሰርሺፕ አማራጮችን ማጥናት።","rd3_p":"ማርች–ኤፕሪል 2027","rd3_t":"የሙከራ ፕሮግራሙን ዕቅድ፣ አጋርነቶችንና የመነሻ ድጋፍ ጥያቄዎችን ማጠናቀቅ።","rd4_p":"ሜይ–ጁላይ 2027","rd4_t":"ውስን የማረጋገጫ ናሙና መሣሪያ መገንባትና ለአጠቃቀም ምቹነቱን መፈተሽ።","rd5_p":"ኦገስት–ኦክቶበር 2027","rd5_t":"ከአጋሮች ጋር አነስተኛ ዎርክሾፖችን ማካሄድና ውጤቱን መገምገም።","rd6_p":"ኖቬምበር–ዲሴምበር 2027","rd6_t":"የተማርነውን ይፋ ማድረግ፣ ሞዴሉን ማሻሻልና ቀጣይ ድጋፍ መፈለግ።","involve_h":"ይሳተፉ","involve_t":"ስደተኞችን ከሚያገለግሉ ድርጅቶች፣ ከማኅበረሰብ አስተማሪዎች እንዲሁም በሸማቾች ጥበቃ፣ በሕግ፣ በትርፍ አልባ ድርጅት ፋይናንስ፣ በዲጂታል ደህንነትና በምርምር ልምድ ካላቸው ሰዎች ጋር እየተነጋገርን ነው።","inv1_h":"የማኅበረሰብ ድርጅቶች","inv1_t":"ማኅበረሰብዎ እያጋጠሙት ያሉ ማጭበርበሮችን ይንገሩን። የሙከራ ፕሮግራሙን ለመቅረጽ ይርዱ።","inv2_h":"አማካሪዎች","inv2_t":"አነስተኛና ገለልተኛ አማካሪ ቡድን ይቀላቀሉ።","inv3_h":"ደጋፊዎች","inv3_t":"አነስተኛና ተለዋዋጭ ድጋፍ ለማዳመጫ መድረኮችና ለመነሻ ዝግጅት ይረዳል። ገና መዋጮ መሰብሰብ አልጀመርንም።","contact_h":"አድራሻ","contact_t":"መሥራች፦ ዶ/ር እንዳልካቸው ኃ. ጫላ","foot_legal":"ስሙ ጊዜያዊ ነው። ድርጅቱ ገና በሕግ አልተመዘገበም፤ ከግብር ነጻ የመሆን ዕውቅናም የለውም። በዚህ ድረ-ገጽ ላይ ያለ ማንኛውም ነገር የሕግ፣ የግብር ወይም የገንዘብ ምክር አይደለም።","foot_trans":"ይህ የመጀመሪያ ረቂቅ ትርጉም ነው። የማኅበረሰብ ግምገማ ገና አልተደረገበትም። ግልጽ ያልሆነ ወይም ስሕተት ካገኙ እባክዎ ያሳውቁን።","foot_lang":"የቋንቋ ምርጫዎ በዚህ መሣሪያ ላይ ብቻ ይታወሳል።","fields_h":"የሥራ መስኮች","fields_note":"የሙከራ ፕሮግራሙ በማጭበርበር ይጀምራል። ሌሎቹ መስኮች አጋሮችና የገንዘብ ድጋፍ ሲፈቅዱ ይከተላሉ።","f1":"የሸማቾችና የገንዘብ ደህንነት","f2":"የኢሚግሬሽንና የሕግ አገልግሎቶች","f3":"የሲቪክ መረጃ","f4":"የጤና መረጃ","f5":"ትምህርት","f6":"የመንግሥት ድጋፍ ፕሮግራሞች","f7":"የአደጋ ጊዜና የድንገተኛ ሁኔታ መረጃ","f8":"ዲጂታል ግላዊነትና ደህንነት","f9":"የቋንቋ ተደራሽነት"},"om":{"nav_mission":"Ergama","nav_programs":"Sagantaalee","nav_pilot":"Yaalii","nav_roadmap":"Karoora","nav_involve":"Hirmaadhaa","status":"Jalqabbii karoorfame. Ammatti seeraan hin galmoofne.","lang_label":"Afaan","hero_title_a":"Kaffaluu","hero_title_b":"dura","hero_title_c":"mirkaneeffadhaa.","hero_lead":"Hawaasni godaantotaa Minnesota keessa jiraatan gowwoomsaa akka adda baasan, odeeffannoo barbaachisaa akka mirkaneeffatan, fi iccitii dhuunfaa isaanii akka eegan afaan guyyaa guyyaan itti fayyadamaniin ni gargaarra.","tagline":"Odeeffannoo amanamaa. Hawaasa humneeffame.","tool_title":"Namni maallaqa ykn sanada isin gaafatu jiraa?","tool_sub":"Dhimmichi maal irratti akka ta'e filadhaa. Mallattoolee akeekkachiisaa fi tarkaanfiiwwan mirkaneessuu ni argitu.","tool_signs":"Mallattoolee akeekkachiisaa","tool_steps":"Kaffaluu keessan dura","tool_check":"Maddeen seera qabeessa irraa mirkaneeffadhaa","tool_links_note":"Geessituuwwan kunniin marsariitii seera qabeessa banu. Irra caalaan Afaan Ingiliziitiin.","tool_note":"Qajeelfamni kun wanti tokko gowwoomsaa ta'uu isaa hin murteessu. Karaalee mirkaneessuu isiniif kenna. Wanti isin as irratti filattan hin kuufamu, hin ergamus.","ag_phone":"Waajjira Abbaa Alangaa Waliigalaa Minnesota","s1":"Gargaarsa imigireeshinii ykn seeraa","s2":"Carraa hojii","s3":"Mana jireenyaa ykn kaffaltii dursaa kiraa","s4":"Bilbila mootummaa ykn poolisii irraa dha jedhu","s5":"Gaaffii maallaqa erguu","s1_g1":"Namni notaariyoo ykn gorsaa dha ofiin jedhu dhimma keessan irratti gorsa seeraa kennuu barbaada.","s1_g2":"Bu'aa waadaa galu ykn walitti dhufeenya addaa qabna jedhu.","s1_g3":"Unkaalee mootummaa duwwaa ta'aniif maallaqa kaffalchiisu.","s1_t1":"Gorsa seeraa imigireeshinii kennuu kan danda'an abukaatotaa fi bakka bu'oota Ministeera Haqaa Ameerikaatiin beekamtii argatan qofa. Maqaa isaa tarree seera qabeessa irratti barbaadaa.","s1_t2":"Unkaaleen imigireeshinii mootummaa uscis.gov irratti bilisaan argamu.","s1_t3":"Waliigaltee barreeffamaa fi nagahee gaafadhaa. Sanadoota keessan orijinaalaa ofii qabadhaa.","s2_g1":"Leenjii, meeshaa ykn qorannoo seenaa keessaniif dursitanii akka kaffaltan gaafatamtu.","s2_g2":"Cheekii isiniif erganii gartokkee isaa akka deebistan gaafatu.","s2_g3":"Af-gaaffii dhugaa malee ariitiin qacaramtan.","s2_t1":"Marsariitii seera qabeessa dhaabbatichaa ofii barbaadaatii lakkoofsa bilbilaa achi irra jiruun bilbilaa.","s2_t2":"Hojii argachuuf maallaqa hin kaffalinaa.","s2_t3":"Hanga hojjechiisaa mirkaneeffattanitti lakkoofsa Soshaal Sekuuritii ykn baankii keessanii hin kenninaa.","s3_g1":"Osoo mana hin argin kaffaltii dursaa gaafatamtu.","s3_g2":"Kiraan isaa manneen walfakkaatan naannoo sanaa irra baay'ee gadi aanaadha.","s3_g3":"Abbaan manaa fagoo akka jiruu fi isin arguu akka hin dandeenye dubbata.","s3_t1":"Homaa kaffaluu keessan dura mana sana qaamaan daawwadhaa.","s3_t2":"Abbaan qabeenyichaa eenyu akka ta'e galmee qabeenyaa kaawuntii irraa mirkaneeffadhaa.","s3_t3":"Karaa ragaa dhiisuun kaffalaa. Waliigaltee kiraa mallattaa'ee fi nagahee fudhadhaa.","s4_g1":"Namni bilbile ammuma akka kaffaltan dirqisiisa.","s4_g2":"Hidhaa, biyyaa ari'amuu ykn faayidaa dhabuun isin sodaachisu.","s4_g3":"Kaardii kennaa, dabarsa baankii ykn kiriiptoon akka kaffaltan gaafatu.","s4_t1":"Bilbila cufaa. Yeroo bilbilaatti murteessuun dirqama miti.","s4_t2":"Lakkoofsa marsariitii seera qabeessa dhaabbatichaa irra jiruun ofii bilbilaa.","s4_t3":"Dhaabbileen mootummaa kaardii kennaatiin kaffaltii hin gaafatan.","s5_g1":"Amma yoo hin raawwanne carraan isin jalaa darba isiniin jedhama.","s5_g2":"Maatii ykn hiriyoota irraa akka dhoksitan gaafatamtu.","s5_g3":"Nama hin beekneef kaardii kennaa, dabarsa baankii, kiriiptoo ykn appii kaffaltiitiin akka kaffaltan gaafatamtu.","s5_t1":"Dhaabbadhaa. Homaa erguu keessan dura nama amantan waliin mari'adhaa.","s5_t2":"Yoo duraan kaffaltaniittu ta'e, battaluma baankii ykn dhaabbata kaardii keessaniitti bilbilaa.","s5_t3":"Gabaasaa. Gabaasni namoota biroo eeguuf gargaara.","mission_h":"Ergama","mission_t":"Hawaasa godaantotaa miidhaa odeeffannoo wajjin walqabatu irraa eeguu; kunis odeeffannoo amanamaa argachuu cimsuun, nageenya dijitaalaa fi maallaqaa guddisuun, mirkaneessa hawaasaan durfamu deeggaruun, akkasumas dhaabbilee fi teeknooloojiiwwan walqunnamtii uummataa bocan irratti itti gaafatamummaa jajjabeessuun.","vision_h":"Mul'ata","vision_t":"Hawaasa hawaasni kamiyyuu afaan, seenaa godaansaa ykn galii isaa osoo hin ilaalin murtee odeeffannoo irratti hundaa'e itti murteessu, nagaan itti walqunnamu, akkasumas saaminsa, gowwoomsaa fi odeeffannoo irraa moggaafamuu malee jireenya uummataa keessatti guutummaatti itti hirmaatu.","principles_h":"Akkaataa hojii keenyaa","pr1_h":"Hoggansa hawaasaa","pr1_t":"Jiraattonnii fi dhaabbileen hawaasaa rakkoolee adda baasuu fi furmaata madaaluu keessatti ni hirmaatu.","pr2_h":"Amantaa fi itti gaafatamummaa","pr2_t":"Mirkaneessuun ragaa irratti hundaa'a, iftoomina qaba, sirreeffamaafis banaadha.","pr3_h":"Iccitii dhuunfaa fi kabaja","pr3_t":"Yoo barbaachisaa ta'e malee haala imigireeshinii, odeeffannoo eenyummaa ibsu ykn ergaawwan miira qaban hin sassaabnu.","pr4_h":"Itti gaafatamummaa dhaabbilee","pr4_t":"Dhaqqabummaa afaanii hiika qabuu fi walqunnamtii sirrii dhiyeessuun itti gaafatamummaa dhaabbilee mootummaa ta'ee itti fufa.","pr5_h":"Teeknooloojii banaa fi dhaqqabamaa","pr5_t":"Meeshaaleen hubatamuu kan danda'an, qorannoof banaa, bakka danda'ametti irra deebi'amee kan itti fayyadamamu ta'uu qabu.","pr6_h":"Gocha ragaa irratti hundaa'e","pr6_t":"Sagantaaleen keenya hammam akka hojjetanii fi bu'aa hin yaadamne akka qaban ni madaalla.","programs_h":"Sagantaalee","programs_sub":"Sagantaa tokkoon jalqabna. Kanneen biroo akkuma qabeenyii fi dursi hawaasaa hayyametti itti aanu.","tag_pilot":"Yaalii bu'uuraa","tag_later":"Marsaa itti aanu","tag_gradual":"Suuta suutaan kan ijaaramu","pg1_h":"Kaffaluu Dura Mirkaneeffadhaa","pg1_t":"Sadarkaa hawaasaatti gowwoomsaa ittisuu, maddeen mirkaneessuu, barnoota kennuu fi gara tajaajila sirriitti qajeelchuu.","pg2_h":"Dhaqqabummaa Afaanii fi Itti Gaafatamummaa Dhaabbilee","pg2_t":"Odeeffannoon dhaabbileen mootummaa dhiyeessan hammam dhaqqabamaa fi sirrii akka ta'e madaaluu; dirqama isaanii osoo bakka hin buusin. Kunis meeshaalee hiikkaa fi AI afaanii afaanota hawaasni itti fayyadamuun madaaluu dabalata.","pg3_h":"Iccitii Dijitaalaa fi Nageenya Hawaasaa","pg3_t":"Leenjii waa'ee nama biraa fakkaatanii dhiyaachuu, nageenya herregaa (account), iccitii dhuunfaa fi balaa saaminsaa.","pg4_h":"Laabii Qorannoo Odeeffannoo Hawaasaa","pg4_t":"Qorannoo hojii irra oolu waa'ee cimdaa odeeffannoo, barmaatilee mirkaneessuu fi miidhaawwan hawaasa ilaallatan.","pilot_h":"Yaalii bu'uuraa","pilot_t":"Carraaqqii xiqqaa hawaasaan durfamu kan namoonni maallaqa erguu, sanada kennuu ykn tajaajila kennaa qacaruu isaanii dura gaaffiiwwan shakkisiisoo akka madaalan gargaaru. Waltajjiiwwan dhaggeeffannaa, leenjii michoota amanamoof kennamuu fi meeshaa mirkaneessaa fakkeenyaa iccitii dhuunfaa eeguun jalqaba.","areas_h":"Bakka irraa jalqabnu","ar1":"Tajaajila imigireeshinii fi seeraa kennaa fakkaatanii dhiyaachuu","ar2":"Carraa hojii fi qacarrii sobaa","ar3":"Gowwoomsaa mana jireenyaa fi kaffaltii dursaa kiraa","ar4":"Mootummaa ykn qaama seera kabachiisu fakkaatanii dhiyaachuu","ar5":"Gowwoomsaa maallaqaa fi kaffaltii wajjin walqabatu","safe_h":"Of eeggannoon kan ijaaramu","safe_t":"Meeshaan fakkeenyaa kun namoota gara galmeewwan seera qabeessaa, teessoo dhaabbilee dhugaa fi mallattoolee akeekkachiisaa ifa ta'aniitti qajeelcha. Wanta mirkanaa'aa hin taane ni ibsa; murtee ofumaan kennamu osoo hin taane tarkaanfiiwwan mirkaneessuu dhiyeessa. Tajaajilli bu'uuraa odeeffannoo dhuunfaa miira qabu hin gaafatu.","targets_h":"Karoora waggaa jalqabaa","targets_note":"Galmoota karooraati. Michootaa fi deeggarsa maallaqaa irratti hundaa'u.","tg1":"Dhaabbilee hawaasaa michuu","tg2":"Waltajjiiwwan dhaggeeffannaa hawaasaa","tg3":"Jiraattota leenjiin dhaqqabaman","tg4":"Barsiisota hawaasaa leenji'an","tg5":"Meeshaa mirkaneessaa fakkeenyaa hojjetu","tg6":"Gabaasa madaallii uummataaf ifa ta'u","road_h":"Karoora, 2026 hanga 2027","road_note":"Sagantaa yeroo karoorfame. Tarkaanfiiwwan itti aanan deeggarsa maallaqaa irratti hundaa'u.","now":"Amma","rd1_p":"Sadaasa–Mudde 2026","rd1_t":"Maqaa hojii fi yaada bu'uuraa mirkaneessuu. Gorsitoota quunnamuu jalqabuu.","rd2_p":"Amajjii–Guraandhala 2027","rd2_t":"Waltajjiiwwan dhaggeeffannaa hawaasaa gaggeessuu. Garee gorsitootaa jalqabaa hundeessuu. Filannoowwan ispoonsarummaa faayinaansii qorachuu.","rd3_p":"Bitootessa–Eebla 2027","rd3_t":"Karoora yaalii, michummaa fi gaaffiiwwan deeggarsa jalqabaa xumuruu.","rd4_p":"Caamsaa–Adoolessa 2027","rd4_t":"Meeshaa mirkaneessaa fakkeenyaa daangeffame ijaaruu fi itti fayyadamaaf mijataa ta'uu isaa qoruu.","rd5_p":"Hagayya–Onkololeessa 2027","rd5_t":"Michoota waliin woorkishooppii xixiqqaa gaggeessuu fi bu'aa isaa madaaluu.","rd6_p":"Sadaasa–Mudde 2027","rd6_t":"Waan baranne ifa gochuu, moodeela fooyyessuu fi deeggarsa itti fufaa barbaaduu.","involve_h":"Hirmaadhaa","involve_t":"Dhaabbilee godaantota tajaajilan, barsiisota hawaasaa, akkasumas namoota eegumsa fayyadamtootaa, seera, faayinaansii dhaabbata bu'aa malee, nageenya dijitaalaa fi qorannoo irratti muuxannoo qaban waliin mari'achaa jirra.","inv1_h":"Dhaabbilee hawaasaa","inv1_t":"Gowwoomsaa hawaasni keessan mudachaa jiru nutti himaa. Yaalii kana bocuu keessatti gargaaraa.","inv2_h":"Gorsitoota","inv2_t":"Garee gorsitootaa xiqqaa fi walaba ta'etti makamaa.","inv3_h":"Deeggartoota","inv3_t":"Deeggarsi xiqqaa fi laafaa ta'e waltajjiiwwan dhaggeeffannaa fi qophii jalqabaatiif gargaara. Ammatti buusii sassaabuu hin jalqabne.","contact_h":"Quunnamtii","contact_t":"Hundeessaa: Dr. Endalkachew H. Chala","foot_legal":"Maqaan kun kan yeroof. Dhaabbatichi ammatti seeraan hin galmoofne; beekamtii gibira irraa bilisa ta'uus hin qabu. Wanti marsariitii kana irra jiru kamiyyuu gorsa seeraa, gibiraa ykn maallaqaa miti.","foot_trans":"Kun hiika wixinee jalqabaati. Gamaaggamni hawaasaa ammatti hin godhamne. Wanti ifa hin taane ykn dogoggorri yoo jiraate maaloo nu beeksisaa.","foot_lang":"Filannoon afaan keessanii meeshaa kana qofa irratti yaadatama.","fields_h":"Dameewwan hojii","fields_note":"Yaaliin kun gowwoomsaa irraa jalqaba. Dameewwan biroo akkuma michoonnii fi deeggarsi maallaqaa hayyametti itti aanu.","f1":"Nageenya fayyadamtootaa fi maallaqaa","f2":"Tajaajila imigireeshinii fi seeraa","f3":"Odeeffannoo siiviikii","f4":"Odeeffannoo fayyaa","f5":"Barnoota","f6":"Sagantaalee deeggarsa mootummaa","f7":"Odeeffannoo balaa fi haala ariifachiisaa","f8":"Iccitii fi nageenya dijitaalaa","f9":"Dhaqqabummaa afaanii"}};
+const SCEN = {
+  s1:[["U.S. Department of Justice: recognized organizations roster","https://www.justice.gov/eoir/recognition-accreditation-roster-reports"],["USCIS: avoid scams","https://www.uscis.gov/scams-fraud-and-misconduct/avoid-scams"]],
+  s2:[["Federal Trade Commission: report fraud","https://reportfraud.ftc.gov/"],["Minnesota Attorney General: scams","https://www.ag.state.mn.us/Consumer/Scams/"]],
+  s3:[["Minnesota Attorney General: file a complaint","https://www.ag.state.mn.us/office/complaint.asp"],["Federal Trade Commission: report fraud","https://reportfraud.ftc.gov/"]],
+  s4:[["Federal Trade Commission: report fraud","https://reportfraud.ftc.gov/"],["Minnesota Attorney General: scams","https://www.ag.state.mn.us/Consumer/Scams/"]],
+  s5:[["Federal Trade Commission: report fraud","https://reportfraud.ftc.gov/"],["Minnesota Attorney General: file a complaint","https://www.ag.state.mn.us/office/complaint.asp"]]
+};
+let lang = "en", scen = "s1";
+const $ = id => document.getElementById(id);
+const t = k => (I18N[lang] && I18N[lang][k]) || I18N.en[k] || "";
+function fill(el, keys){ el.replaceChildren(...keys.map(k => { const li = document.createElement("li"); li.textContent = t(k); return li; })); }
+function renderTool(){
+  $("chips").replaceChildren(...Object.keys(SCEN).map(s => {
+    const b = document.createElement("button"); b.type = "button"; b.className = "chip"; b.id = "chip-" + s;
+    b.textContent = t(s); b.setAttribute("aria-pressed", String(s === scen));
+    b.addEventListener("click", () => { scen = s; renderTool(); });
+    return b;
+  }));
+  fill($("signs"), [1,2,3].map(i => scen + "_g" + i));
+  fill($("steps"), [1,2,3].map(i => scen + "_t" + i));
+  $("links").replaceChildren(...SCEN[scen].map(([label, url]) => { const a = document.createElement("a"); a.href = url; a.rel = "noopener"; a.textContent = label + " ↗"; return a; }));
+}
+function apply(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
+  $("trans").hidden = lang === "en";
+  renderTool();
+}
+function markRoad(){
+  const d = new Date(), ym = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0");
+  document.querySelectorAll("#road li").forEach(li => {
+    li.classList.toggle("now", ym >= li.dataset.start && ym < li.dataset.end);
+    li.classList.toggle("done", ym >= li.dataset.end);
+  });
+}
+try { const s = localStorage.getItem("mcict-lang"); if (s && I18N[s]) lang = s; } catch (e) {}
+if (lang === "en") {
+  const pref = (navigator.languages || [navigator.language || "en"]).map(x => x.slice(0,2).toLowerCase()).find(x => I18N[x]);
+  if (pref) lang = pref;
+}
+$("lang").value = lang;
+$("lang").addEventListener("change", e => { lang = e.target.value; try { localStorage.setItem("mcict-lang", lang); } catch (err) {} apply(); });
+apply(); markRoad();
+</script>
+</body>
+</html>
